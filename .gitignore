@@ -1,10 +1,6 @@
-_site/*
-_theme_packages/*
-
-Thumbs.db
+_site
+.coffeehintrc
+.jshintrc
+img/Thumbs.db
 .DS_Store
-
-!.gitkeep
-
-.rbenv-version
-.rvmrc
+node_modules

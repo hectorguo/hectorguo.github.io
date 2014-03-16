@@ -1,5 +1,9 @@
 ---
 layout: default
 ---
-{% include JB/setup %}
-{% include themes/twitter/page.html %}
+
+<article class="single row gutters">
+  <h2>{{ page.title }}</h2>
+
+  {{ content }}
+</article>
