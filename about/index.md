@@ -3,4 +3,4 @@ layout: page
 title: About
 ---
 
-联系我：hectorguo[at]live.com
+联系我：hectorguo@live.com
