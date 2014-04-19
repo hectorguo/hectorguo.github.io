@@ -1,10 +1,5 @@
 ---
-published: false
----
-
----
-layout: post
-title: 广州、深圳住宿情况
+published: true
 ---
 
 #酒店情况
