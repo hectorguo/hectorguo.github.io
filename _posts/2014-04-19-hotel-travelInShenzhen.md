@@ -1,5 +1,4 @@
 ---
-published: true
 layout: post
 title: 广州-深圳-香港游玩
 category: 旅行
@@ -8,8 +7,8 @@ category: 旅行
 ##五一假期酒店情况
 ### 广州玩，之后来深圳方便的
 长隆两日游 25-26号  850~875/双人，住宿+玩  
-* [路线1-海洋公园、大马戏(￥875/双人)](http://www.hwtrip.com/detail/7/2737.html)
-* [路线2-长隆主题公园、大马戏(￥850/双人)](http://www.hwtrip.com/detail/7/2737.html)
++ [路线1-海洋公园、大马戏(￥875/双人)](http://www.hwtrip.com/detail/7/2737.html)
++ [路线2-长隆主题公园、大马戏(￥850/双人)](http://www.hwtrip.com/detail/7/2737.html)
 
 ### 便宜舒服的 / 去机场方便
 百草园  135/间，1.5米床
@@ -30,7 +29,8 @@ category: 旅行
 ## 路线
 ### 去
 1. 广州玩两天， 深圳住一晚， 去香港。
-2. 广州玩一天，深圳一天两晚，住市区，再去香港。 
+2. 广州玩一天，深圳一天两晚，住市区，再去香港。
+
 ### 回
 1. 住百草园，去机场方便，房间充裕  135/间，1.5米床
 2. 住东门格林豪泰， [289/双床](http://hotel.qunar.com/city/shenzhen/dt-249/?_=1#tag=shenzhen&fromDate=2014-05-01&toDate=2014-05-02&q=%E6%A0%BC%E6%9E%97%E8%B1%AA%E6%B3%B0&from=brandsearch&filterid=1b8f13b0-8212-48d9-ae94-af8623a5d0ce_C&showMap=0&qptype=brand%7Cgroup&QHFP=ZSS_A51E70C6&QHPR=1_2_0_0&cityurl=shenzhen&HotelSEQ=shenzhen_249&rnd=1397899213777&sgroup=A&roomNum=1)
