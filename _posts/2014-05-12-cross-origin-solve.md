@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 
 前端跨域问题解决方法集锦
