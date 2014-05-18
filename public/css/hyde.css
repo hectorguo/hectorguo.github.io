@@ -114,7 +114,11 @@ a.sidebar-nav-item:focus {
   }
 }
 
-
+.circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+}
 /* Container
  *
  * Align the contents of the site above the proper threshold with some margin-fu
