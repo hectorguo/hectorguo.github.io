@@ -1,11 +1,9 @@
 ---
-published: false
+layout: post
+title: 抛弃word，拥抱markdown
+published: true
 ---
 
-抛弃word，拥抱markdown
-========
-
-@[编辑 | 总结]
 ##Word排版难用吗？
 你曾经是否认为， **Office Word**的排版很强大。 但真正使用时，却发现，因为它功能太多，为了写一篇漂亮的文章，除了内容外，要花费大量的时间，进行排版。
 
