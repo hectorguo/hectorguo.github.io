@@ -4,9 +4,6 @@ title: 前端跨域问题解决方法集锦
 published: true
 ---
 
-前端跨域问题解决方法集锦
-================
-
 ### 何为跨域（CORS）?
 > 所謂跨站HTTP請求(Cross-site HTTP request)是指發出請求所在網域不同於請求所指向之網域的HTTP請求，例如網域A (http://domaina.example) 的網頁載入一個<img>元素向網域B(http://domainb.foo) 請求影像資源(http://domainb.foo/image.jpg) 。這種作法在現今各網頁相當常見，網頁常常會載入其他網站資源，像是CSS樣式表、影像、程式碼等等資源。
 
