@@ -1,13 +1,25 @@
-title:        HectorGuo's Blog
-tagline:      'The Tech Blog of HectorGuo'
-description:  ''
-url:          http://hectorguo.github.io
-version:      1.0
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            HectorGuo's Blog
+tagline:          'The Tech Blog of HectorGuo'
+description:      ''
+url:              http://hectorguo.github.io
+
 author:
-  name:       ''
-  email:      ''
-markdown:     rdiscount
-permalink:    pretty
-pygments:     true
-paginate:     5
-encoding:     utf-8
+  name:           'Hector Guo'
+  url:            http://weibo.com/u/1829433861
+
+paginate:         5
+
+# Custom vars
+version:          2.0.0
+
+github:           https://github.com/hectorguo
+  repo:           https://github.com/poole/hyde
+encoding:         utf-8
