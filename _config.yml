@@ -1,7 +1,7 @@
 # Dependencies
 markdown:         redcarpet
 redcarpet: 
-    extensions: ["tables", "with_toc_data", "strikethrough", "underline", "footnotes"]
+    extensions:   ["fenced_code_blocks", "tables", "with_toc_data", "strikethrough", "underline", "footnotes"]
 highlighter:      pygments
 
 # Permalinks
