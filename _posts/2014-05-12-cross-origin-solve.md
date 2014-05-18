@@ -15,6 +15,7 @@ published: true
 针对外网的跨域，即在本地(localhost) / 你的站点 中，想获取外部的数据，一般为其他的开放API。如[google map api](https://developers.google.com/maps/?hl=zh-cn)，但此时的数据与 你的站点不属于同源，当进行请求时，浏览器则会提示**across origin error**。
 随着html5的诞生，W3C也开始考虑对跨域的请求方式进行规范。
 #### 解决方法：
+
 1. **XMLHttpRequest Level 2**（简称**XHR**） —— 新版本的http(s)通信方式
     由于老版本XHR收到`同源策略`限制，只能向同一域名的服务器请求数据。
     因此新版本，针对老版本的缺点，做了改进，支持 `跨域请求`。
@@ -135,6 +136,7 @@ published: true
 
 这个是因为浏览器的限制。 目前chrome、firfox、opera都出现了这种情况，因为有安全沙箱，它们认为加载本地其它文件为跨域访问（但是使用IE8就不会出现这种错误）。
 为了解决该问题，解决方法有两种：
+
 1. **设置Chrome启动参数**
     在启动Chrome时，添加一个参数：**--allow-file-access-from-files**
     ![Alt text](./2014-05-12_205659.jpg)
@@ -165,6 +167,7 @@ published: true
 
 
 ####参考
+
 [1] [XMLHttpRequest2 新技巧](http://www.html5rocks.com/zh/tutorials/file/xhr2/)
 [2] [Chrome扩展开发手册](http://open.chrome.360.cn/html/dev_xhr.html)
 [3] [解决Chrome跨域的方法](http://hi.baidu.com/qf_soft/item/01a3bcda48ee7cca1a72b486)
