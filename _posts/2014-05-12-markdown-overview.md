@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 抛弃word，拥抱markdown
+title: 抛弃word, 拥抱markdown
 published: true
 ---
 
@@ -8,15 +8,15 @@ published: true
 你曾经是否认为， **Office Word**的排版很强大。 但真正使用时，却发现，因为它功能太多，为了写一篇漂亮的文章，除了内容外，要花费大量的时间，进行排版。
 
 比如 
-
 - `表格`是 **右对齐**还是**左对齐**？
 - `标题`用几号字体，什么颜色？
 - `行距`定多少合适？
 
 当然，为了避免太过繁琐，**Word**提供了`样式`功能，针对一系列共性，预设好统一的风格。
 
-但在写作当中，仍感觉会有一些麻烦：
+![Office样式](data:image,local://2014-05-06_201820.jpg)
 
+但在写作当中，仍感觉会有一些麻烦：
 - `样式`自定义项太多，太繁琐。
 - `代码高亮`，设置太麻烦
 - 不同版本的`兼容性`（03版本的如果放到07以上的版本，有些样式就不一样了）
@@ -29,6 +29,9 @@ published: true
 ##什么是Markdown？
 > [Markdown](http://zh.wikipedia.org/wiki/Markdown) 是一种轻量级标记语言，创始人为约翰·格鲁伯（John Gruber）和亚伦·斯沃茨（Aaron Swartz）。它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML(或者HTML)文档”。[1]这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。
 
+###现在来看看下它的魔力吧！
+![Alt text](data:image,local://2014-05-06_203926.jpg)
+
 ##[Markdown是为哪些使用者设计的？](http://www.zhihu.com/question/20409634)
 > 首先要确定你是否真的需要markdown，使用某种工具是为了提高效率或者某种体验的，如果这种工具并不能显著帮你改善体验，那就让它见鬼去吧，哪怕这个工具学起来很简单。
 
@@ -39,13 +42,11 @@ published: true
 ##Markdown如何使用？
 心动了吗？ 
 如果你对它产生了兴趣，那么请去官方网站记下它的几个简单的语法吧。
-
 - 简明版 [Markdown 语法说明(简体中文版)](http://wowubuntu.com/markdown/basic.html)
 - 完整版 [Markdown 语法说明(简体中文版)](http://wowubuntu.com/markdown/index.html)
 
 简单的可以看下这个：
-
-``` markdown
+```markdown
         标题
         # 内容 （一级标题）
         ## 内容 （二级标题）
@@ -82,19 +83,15 @@ published: true
         横线
         三个或三个以上的星号、减号或者下划线
 ```
-
-
 ###与其说它是一种标记语言，我更想把它当作是一种新的写作方式。 
 
 - 当你不再想纠结标题、正文的风格样式，以及段落的情况，而想用一种更纯粹的方式写作的话，那你可以试下markdown。
 
 在此推荐几个编辑器：
-
 1. [马克飞象](http://maxiang.info/) ——此APP与 [印象笔记](www.yinxiang.com) 结合的很好，而且编辑时可以实时显示效果，并且复制到你的笔记时，样式也一同复制了（而Word的样式，笔记中并不会保留）。
 2. [MarkdownPad](markdownpad.com) ——老牌windows下的编辑器，离线版的
 3. Sublime Text插件：[MarkdownEditing](https://sublime.wbond.net/packages/MarkdownEditing‎
 ) —— 程序猿盆友们的福音
 
-
-
-
+###最后，展示下我写的效果 ^o^：
+![Alt text](data:image,local://2014-05-06_203114.jpg)
