@@ -1,10 +1,13 @@
-markdown: redcarpet
-pygments: true
-permalink: /:title
-encoding: utf-8
-
-url:
-baseurl: 
-
-redcarpet:
-  extensions: [strikethrough, tables]
+title:        HectorGuo's Blog
+tagline:      'The Tech Blog of HectorGuo'
+description:  ''
+url:          http://hectorguo.github.io
+version:      1.0
+author:
+  name:       ''
+  email:      ''
+markdown:     rdiscount
+permalink:    pretty
+pygments:     true
+paginate:     5
+encoding:     utf-8
