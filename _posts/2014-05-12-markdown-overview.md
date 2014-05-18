@@ -87,7 +87,8 @@ published: true
 
 - 当你不再想纠结标题、正文的风格样式，以及段落的情况，而想用一种更纯粹的方式写作的话，那你可以试下markdown。
 
-在此推荐几个编辑器：
+在此推荐几个编辑器： 
+
 1. [马克飞象](http://maxiang.info/) ——此APP与 [印象笔记](www.yinxiang.com) 结合的很好，而且编辑时可以实时显示效果，并且复制到你的笔记时，样式也一同复制了（而Word的样式，笔记中并不会保留）。
 2. [MarkdownPad](markdownpad.com) ——老牌windows下的编辑器，离线版的
 3. Sublime Text插件：[MarkdownEditing](https://sublime.wbond.net/packages/MarkdownEditing‎
