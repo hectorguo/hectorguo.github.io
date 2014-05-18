@@ -115,6 +115,7 @@ published: true
 
 3. **利用Chrome 插件解决跨域** —— 无需借助服务器声明，无障碍跨域
     如果我不想这么麻烦，我只想批量抓取外网的一些数据结果，是否有简单的方法呢？
+    
     当然，目前Chrome扩展中为了方便插件获取不同域的数据，提供了解决方法。
     即只需在`manifest.json`文件中的**"permission"**中声明，再用xmlhttpRequest即可。详情可参考[Chrome扩展开发手册](http://open.chrome.360.cn/html/dev_xhr.html)
 
@@ -169,7 +170,11 @@ published: true
 ####参考
 
 [1] [XMLHttpRequest2 新技巧](http://www.html5rocks.com/zh/tutorials/file/xhr2/)
+
 [2] [Chrome扩展开发手册](http://open.chrome.360.cn/html/dev_xhr.html)
+
 [3] [解决Chrome跨域的方法](http://hi.baidu.com/qf_soft/item/01a3bcda48ee7cca1a72b486)
+
 [4] [JavaScript的同源策略](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Same_origin_policy_for_JavaScript)
+
 [5] [XMLHttpRequest Level 2 使用指南](http://www.ruanyifeng.com/blog/2012/09/xmlhttprequest_level_2.html)

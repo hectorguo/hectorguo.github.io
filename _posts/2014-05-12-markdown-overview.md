@@ -8,6 +8,7 @@ published: true
 你曾经是否认为， **Office Word**的排版很强大。 但真正使用时，却发现，因为它功能太多，为了写一篇漂亮的文章，除了内容外，要花费大量的时间，进行排版。
 
 比如 
+
 - `表格`是 **右对齐**还是**左对齐**？
 - `标题`用几号字体，什么颜色？
 - `行距`定多少合适？
@@ -17,6 +18,7 @@ published: true
 ![Office样式](data:image,local://2014-05-06_201820.jpg)
 
 但在写作当中，仍感觉会有一些麻烦：
+
 - `样式`自定义项太多，太繁琐。
 - `代码高亮`，设置太麻烦
 - 不同版本的`兼容性`（03版本的如果放到07以上的版本，有些样式就不一样了）
@@ -42,10 +44,12 @@ published: true
 ##Markdown如何使用？
 心动了吗？ 
 如果你对它产生了兴趣，那么请去官方网站记下它的几个简单的语法吧。
+
 - 简明版 [Markdown 语法说明(简体中文版)](http://wowubuntu.com/markdown/basic.html)
 - 完整版 [Markdown 语法说明(简体中文版)](http://wowubuntu.com/markdown/index.html)
 
 简单的可以看下这个：
+
 ```markdown
         标题
         # 内容 （一级标题）
@@ -83,11 +87,14 @@ published: true
         横线
         三个或三个以上的星号、减号或者下划线
 ```
+
+
 ###与其说它是一种标记语言，我更想把它当作是一种新的写作方式。 
 
 - 当你不再想纠结标题、正文的风格样式，以及段落的情况，而想用一种更纯粹的方式写作的话，那你可以试下markdown。
 
 在此推荐几个编辑器：
+
 1. [马克飞象](http://maxiang.info/) ——此APP与 [印象笔记](www.yinxiang.com) 结合的很好，而且编辑时可以实时显示效果，并且复制到你的笔记时，样式也一同复制了（而Word的样式，笔记中并不会保留）。
 2. [MarkdownPad](markdownpad.com) ——老牌windows下的编辑器，离线版的
 3. Sublime Text插件：[MarkdownEditing](https://sublime.wbond.net/packages/MarkdownEditing‎
