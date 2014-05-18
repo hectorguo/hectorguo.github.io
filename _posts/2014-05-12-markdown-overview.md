@@ -15,8 +15,6 @@ published: true
 
 当然，为了避免太过繁琐，**Word**提供了`样式`功能，针对一系列共性，预设好统一的风格。
 
-![Office样式](data:image,local://2014-05-06_201820.jpg)
-
 但在写作当中，仍感觉会有一些麻烦：
 
 - `样式`自定义项太多，太繁琐。
@@ -30,9 +28,6 @@ published: true
 ####当然有，这就是 **Markdown**，一种新的编辑方式。
 ##什么是Markdown？
 > [Markdown](http://zh.wikipedia.org/wiki/Markdown) 是一种轻量级标记语言，创始人为约翰·格鲁伯（John Gruber）和亚伦·斯沃茨（Aaron Swartz）。它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML(或者HTML)文档”。[1]这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。
-
-###现在来看看下它的魔力吧！
-![Alt text](data:image,local://2014-05-06_203926.jpg)
 
 ##[Markdown是为哪些使用者设计的？](http://www.zhihu.com/question/20409634)
 > 首先要确定你是否真的需要markdown，使用某种工具是为了提高效率或者某种体验的，如果这种工具并不能显著帮你改善体验，那就让它见鬼去吧，哪怕这个工具学起来很简单。
@@ -100,8 +95,6 @@ published: true
 3. Sublime Text插件：[MarkdownEditing](https://sublime.wbond.net/packages/MarkdownEditing‎
 ) —— 程序猿盆友们的福音
 
-###最后，展示下我写的效果 ^o^：
-![Alt text](data:image,local://2014-05-06_203114.jpg)
 
 
 
