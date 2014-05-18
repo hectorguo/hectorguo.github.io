@@ -21,5 +21,4 @@ paginate:         5
 version:          2.0.0
 
 github:           https://github.com/hectorguo
-  repo:           https://github.com/poole/hyde
 encoding:         utf-8
