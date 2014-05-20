@@ -16,7 +16,7 @@ published: true
 随着html5的诞生，W3C也开始考虑对跨域的请求方式进行规范。
 #### 解决方法：
 
-1. **XMLHttpRequest Level 2**（简称**XHR**） —— 新版本的http(s)通信方式
+1. **XMLHttpRequest Level 2**（简称**XHR**） —— 新版本的http(s)通信方式  
     由于老版本XHR收到`同源策略`限制，只能向同一域名的服务器请求数据。
     因此新版本，针对老版本的缺点，做了改进，支持 `跨域请求`。
     但前提是浏览器必须支持这个功能，而且服务器端必须同意这种"跨域"（[Access-Control-Allow-Origin设置](https://dvcs.w3.org/hg/cors/raw-file/tip/Overview.html)）。如果能够满足上面的条件，则代码的写法与不跨域的请求完全一样。
@@ -32,7 +32,7 @@ published: true
     ```
     新版XHR中，新增了`xhr.responseType`,`xhr.response`属性，可以告诉浏览器，请求后返回什么格式的数据，使我们可以更方便的抓取二进制blob形式的文件。详情可参考[XMLHttpRequest2 新技巧](http://www.html5rocks.com/zh/tutorials/file/xhr2/)。
 
-2. **JSONP** —— 新型的简单的解决方法
+2. **JSONP** —— 新型的简单的解决方法  
     **JSONP**可以克服 **XMLHttpRequest** 的同源限制，简单的获取到不同源的数据。
     原理很简单，就是script标签 + callback 。（因为 script 并不受同源限制的影响）
     
@@ -113,7 +113,7 @@ published: true
             
     ```
 
-3. **利用Chrome 插件解决跨域** —— 无需借助服务器声明，无障碍跨域
+3. **利用Chrome 插件解决跨域** —— 无需借助服务器声明，无障碍跨域  
     如果我不想这么麻烦，我只想批量抓取外网的一些数据结果，是否有简单的方法呢？
     
     当然，目前Chrome扩展中为了方便插件获取不同域的数据，提供了解决方法。
@@ -138,12 +138,12 @@ published: true
 这个是因为浏览器的限制。 目前chrome、firfox、opera都出现了这种情况，因为有安全沙箱，它们认为加载本地其它文件为跨域访问（但是使用IE8就不会出现这种错误）。
 为了解决该问题，解决方法有两种：
 
-1. **设置Chrome启动参数**
+1. **设置Chrome启动参数**  
     在启动Chrome时，添加一个参数：**--allow-file-access-from-files**
     ![Alt text](./2014-05-12_205659.jpg)
 
     每次启动Chrome都使用该快捷方式，即可解决本地跨域问题
-2. **启动Apache设置虚拟主机**
+2. **启动Apache设置虚拟主机**  
     Apache中含有虚拟主机的功能，即可以将不同路径下的资源(file://d:/projectA ; file://c:/projectB)，设置成同源(localhost/projectA; localhost/projectB),这样引用时，由于都处在 localhost下，因此不会出现跨域问题。
 
         
