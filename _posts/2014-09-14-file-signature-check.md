@@ -90,25 +90,21 @@ var signature = {
         offset: 0,
         sizet: 8
     },
-
     docx: {
         signature: "504B030414000600",
         offset: 0,
         sizet: 8
     },
-
     jpe: {
         signature: "FFD8FFE0",
         offset: 0,
         sizet: 4
     },
-
     jpeg: {
         signature: "FFD8FFE0",
         offset: 0,
         sizet: 4
     },
-
     jpg: {
         signature: ["FFD8FFE0","FFD8FFE1","FFD8FFE8"],
         offset: 0,
@@ -204,7 +200,7 @@ var signature = {
 
 ### 参考
 
-[1]: https://developer.mozilla.org/zh-CN/docs/Web/API/FileReader        "FileReader API"
-[2]: https://www.inkling.com/read/javascript-definitive-guide-david-flanagan-6th/chapter-22/reading-the-first-four-bytes-of  "Reading the first four bytes of a file"
-[3]: http://www.garykessler.net/library/file_sigs.html    "FILE SIGNATURES TABLE"
-[4]: http://www.filesignatures.net    "File Signature Database"
+[1] [FileReader API](https://developer.mozilla.org/zh-CN/docs/Web/API/FileReader)
+[2] [Reading the first four bytes of a file](https://www.inkling.com/read/javascript-definitive-guide-david-flanagan-6th/chapter-22/reading-the-first-four-bytes-of)
+[3] [FILE SIGNATURES TABLE](http://www.garykessler.net/library/file_sigs.html)
+[4] [File Signature Database](http://www.filesignatures.net)
