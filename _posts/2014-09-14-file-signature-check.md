@@ -201,6 +201,9 @@ var signature = {
 ### 参考
 
 [1] [FileReader API](https://developer.mozilla.org/zh-CN/docs/Web/API/FileReader)
+
 [2] [Reading the first four bytes of a file](https://www.inkling.com/read/javascript-definitive-guide-david-flanagan-6th/chapter-22/reading-the-first-four-bytes-of)
+
 [3] [FILE SIGNATURES TABLE](http://www.garykessler.net/library/file_sigs.html)
+
 [4] [File Signature Database](http://www.filesignatures.net)
