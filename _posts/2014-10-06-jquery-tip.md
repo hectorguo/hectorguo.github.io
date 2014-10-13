@@ -6,9 +6,7 @@ category: javascript
 ---
 
 本篇主要讲解jquery中一些方法的性能及注意事项，全是项目中遇到的问题总结，怕以后会忘记，遂在此记录一下。
-
 ### 1. `$( )`相对选择器 与  `find`
-
 ```javascript
 $('#id', '.container')  
 $('.container').find('#id')
