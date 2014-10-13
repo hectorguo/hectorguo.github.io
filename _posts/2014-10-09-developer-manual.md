@@ -1,3 +1,10 @@
+---
+layout: post
+title: 开发者社区建设思路
+published: true
+category: others
+---
+
 ## 目录结构
 
 ```
