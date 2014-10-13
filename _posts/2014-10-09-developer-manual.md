@@ -31,8 +31,11 @@ category: others
 ```
 
 ## 整体思路
+
 #### 1. 独立模版文件，生成布局
-单独模版文件，定义社区布局.  
+
+单独模版文件，定义社区布局  
+
 ```html
 <!-- layout- index.html -->
 <!DOCTYPE html>
@@ -50,17 +53,17 @@ category: others
 
   </body>
 </html>
-
 ```
 
 #### 2. 根据内容页面，自动生成栏目树
+
 每个页面一个实体文件(wml)，根据目录结构，自动生成左侧栏目Tree。  
 首页Metro区块，亦可根据内容生成。
 
-
-
 #### 3. 内容发布器集合HTML、WML，支持DEMO+文本混编
+
 撰写API的同时，支持wml混编，方便同时编辑富文本+DEMO。
+
 ```xml
 <h3>国际化</h3>
 
