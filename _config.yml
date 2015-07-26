@@ -2,7 +2,7 @@
 title: "HectorGuo's Blog"
 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://hectorguo.github.io" # the base hostname & protocol for your site
+url: "http://hectorguo.com" # the base hostname & protocol for your site
 tagline:          "The Tech & Life"
 # Build settings
 markdown: kramdown
