@@ -17,6 +17,10 @@ kramdown:
 # Permalinks
 permalink:        /:categories/:title
 
+# create sitemap
+gems:
+  - jekyll-sitemap
+
 # css compressed
 sass:
   style: compressed
