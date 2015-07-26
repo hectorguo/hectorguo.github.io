@@ -3,7 +3,7 @@ layout: post
 title: "抛弃word, 拥抱markdown"
 published: true
 category: zh
-cover: "http://ww4.sinaimg.cn/large/6d0af205jw1eug5of8yd6j20u90dzwjx.jpg"
+cover: "http://ww4.sinaimg.cn/large/6d0af205jw1eug84adunrj20py0dtq8o.jpg"
 ---
 
 ## Word排版难用吗？
