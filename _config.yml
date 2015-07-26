@@ -17,6 +17,10 @@ kramdown:
 # Permalinks
 permalink:        /:categories/:title
 
+# css compressed
+sass:
+  style: compressed
+
 # i18n
 author:
   zh: "郭海旭"
