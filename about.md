@@ -1,16 +1,12 @@
 ---
 layout: page
-title: About
+title: 关于我
+permalink: /zh/about/
 ---
 
-<img class="circle" src="http://tp2.sinaimg.cn/1829433861/180/40004902799/1" alt="Avatar">
+### 郭海旭
 
-**郭海旭**
-
-一个非科班的IT男
-
+Web前端开发，iOS应用开发，人机交互研究
 编程不是为了写代码而编程，是为了解决问题而编程
 
-* 微博：[郭海旭-Hector](http://weibo.com/u/1829433861)
-* 知乎：[郭海旭](http://www.zhihu.com/people/hectorguo)
-* Github：[hectorguo](https://github.com/hectorguo)
+更多个人信息请查看 [Linkedin](https://www.linkedin.com/in/hectorguo)

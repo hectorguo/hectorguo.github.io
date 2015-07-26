@@ -1,0 +1,30 @@
+<footer class="site-footer">
+  <div class="wrapper">
+    <!-- <h2 class="footer-heading">{{ site.title }}</h2> -->
+    <div class="table-list">
+      <div class="table-cell">
+      <a href="{{site.data.i18n[page.lang].about.url}}">
+        <img class="circle" src="http://tp2.sinaimg.cn/1829433861/180/40004902799/1" alt="Avatar">
+      </a>
+      </div>
+      <div class="table-cell">
+        <h4>{{ site.author[page.lang] }}</h4>
+        <p>{{ site.description[page.lang] }}</p>
+        <ul class="inline-list">
+          {% for contact in site.contacts[page.lang] %}
+          <li><a href="{{contact.url}}" target="_blank"><span class="iconfont">{{contact.icon}}</span>
+          {{contact.name}}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+<!--     <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>{{ site.title }}</li>
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        </ul>
+      </div>
+    </div> -->
+  </div>
+</footer>

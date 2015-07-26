@@ -1,0 +1,24 @@
+<header class="site-header">
+
+  <div class="wrapper">
+
+    {% for menu in site.data.i18n[page.lang] %}
+      <a class="site-title" href="{{menu[1].url}}">{{menu[1].name}}</a>
+    {% endfor %}
+
+    <nav class="site-nav">
+      <div class="trigger">
+        {% if page.lang == "zh" %}
+          {% if page.title %}
+          <a href="{{ page.url | replace:'zh/','en/' }}" class="lang">EN</a>
+          {% else %}
+          <a href="en/index" class="lang">EN</a>
+          {% endif %}
+        {% else %}
+        <a href="{{ page.url | replace:'en/','zh/' }}" class="lang">中文</a>
+        {% endif %}
+      </div>
+    </nav>
+  </div>
+
+</header>

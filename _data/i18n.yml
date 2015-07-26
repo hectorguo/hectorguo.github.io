@@ -1,0 +1,20 @@
+en:
+    home:
+        name: "Home"
+        url: "/en/index"
+    projects:
+        name: "Projects"
+        url: "/en/projects"
+    about:
+        name: "About"
+        url: "/en/about"
+zh:
+    home:
+        name: "首页"
+        url: "/"
+    projects:
+        name: "项目"
+        url: "/zh/projects"
+    about:
+        name: "关于"
+        url: "/zh/about"
