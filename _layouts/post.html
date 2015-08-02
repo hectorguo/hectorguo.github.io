@@ -18,7 +18,7 @@ layout: default
   		<span class="iconfont">0</span>
   		Comments
   	</a>
-  	<a class="share-btn" href="http://service.weibo.com/share/share.php?url={{ page.url }}&appkey={{ site.weibo_appkey }}&title={{ page.title }}&pic={{ page.cover }}&language=zh_cn">
+  	<a class="share-btn" target="blank" href="http://service.weibo.com/share/share.php?url={{ page.url }}&appkey={{ site.weibo_appkey }}&title={{ page.title | cgi_escape }}&pic={{ page.cover }}&language=zh_cn">
   		<span class="iconfont">&#xe619;</span>
   		Share
   	</a>
