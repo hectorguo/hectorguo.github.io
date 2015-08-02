@@ -25,6 +25,8 @@ gems:
 sass:
   style: compressed
 
+weibo_appkey: "1908369758"
+
 # i18n
 author:
   zh: "郭海旭"
