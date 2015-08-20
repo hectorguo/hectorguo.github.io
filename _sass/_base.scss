@@ -92,6 +92,7 @@ a {
     color: $brand-color;
     text-decoration: none;
     word-wrap: break-word;
+    transition: color 0.2s;
     // border-bottom: 1px dotted #fff;
     // &:visited {
     //     color: darken($brand-color, 15%);

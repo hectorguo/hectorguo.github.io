@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<div class="post">
+{% for project in page.projects %}
+
+<div href="{{project.link}}" class="item">
+  <img src="{{project.img}}" alt="{{project.name}}" class="thumbnail">
+  <div class="des">
+    <h4>{{project.name}}</h4>
+    <p>{{project.des}}</p>
+    <p>{{project.based}} / {{project.date}}</p>
+    <ul class="inline-list">
+    {% if project.link %}
+      <a href="{{project.link}}"><span class="iconfont"></span> Project Page</a></li>
+    {% endif %}
+    {% if project.github %}
+    <li><a href="{{project.github}}"><span class="iconfont"></span> View on Github</a></li>
+    {% endif %}
+    {% if project.chrome %}
+        <li><a href="{{project.chrome}}"><span class="iconfont"></span> View on Chrome Store</a></li>
+    {% endif %}
+    {% if project.ios %}
+        <li><a href="{{project.ios}}"><span class="iconfont"></span> View on App Store</a></li>
+    {% endif %}
+    {% if project.android %}
+        <li><a href="{{project.android}}"><span class="iconfont"></span> View on Google Play</a></li>
+    {% endif %}
+    {% if project.steam %}
+        <li><a href="{{project.steam}}"><span class="iconfont"></span> View on Steam</a></li>
+    {% endif %}
+    </ul>
+  </div>
+</div>
+
+{% endfor %}
+</div>
