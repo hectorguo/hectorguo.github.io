@@ -20,13 +20,15 @@ For instance, there is a BOQ1 which includes 5 sets of product A with 50 item1 (
 
 | BOQ Name | Product Name | Qty of Product | Item Name | Qty of Item | Item Price |
 | ------ |:-------- |:-------- |:-------- |:-------- |:-------- |
-| BOQ1   | Product A  | 5      | item1    | 50     | $3     |
+| BOQ1   | Product A| 5      | item1    | 50     | $3     |
 |        |          |          | item2    | 30     | $4      |
 
-Given the information, we can get the amount of product A.    
+Given the information, we can get the amount of product A.
+
 $$
-$A = ($item1 + $item2) * Qty_A = (50*3+30*4)*5
+$A =($item1+$item2)*Qty_A=(50*3+30*4)*5
 $$
+
 At this moment, customers want to retreat item2 in Product A. So this process goes below:
 
 | BOQ Name | Product Name | Qty of Product | Item Name | Qty of Item | Item Price |
@@ -36,7 +38,7 @@ At this moment, customers want to retreat item2 in Product A. So this process go
 | DBOQ（changes）  | Product A | 5 | item2 | 30 | $4 |
 
 $$
-$A = （50*3+0*4)*5
+$A = (50*3+0*4)*5
 $$
 
 However, in this case, suppliers must add a new BOQ for products that have been returned while original BOQ can not be changed.
@@ -47,7 +49,7 @@ However, in this case, suppliers must add a new BOQ for products that have been 
 |                     |      |     |item2 |30 |$4|
 |Return BOQ（similar as DBOQ）|Product A |5  |item2 |30 |$4|
 
-**How to address this issue for back-end system ?**
+#### How to address this issue for back-end system ?
 
 1. Update MBOQ, then do some tricky on DBOQ
 2. Only take DBOQ, then estimate whether delete items in original BOQ or add a new return BOQ.
@@ -59,37 +61,50 @@ Finally, we choose solution 1. However, another issue comes.
 For example, customers may have changed the amount of the rest of products while they cancel products. How to deal with this complex case ? It seems to be hard to list a table include all those cases. But we can try an another method: **Control variable method**. Process is below:
 
 1.**Find all variables**, such as Qty of Product (X), Qty of Item (Y) and Price of item (Z).
+
 2.**Equation and derivation**
   Assuming that only the quantity of item can be changed, others are constant. Then we just need to identify:
+  
   $$
   $A_{oBOQ} = $A_{MBOQ}+$A_{DBOQ}
   $$
+
   $$
   $A_{oBOQ} = $item1+$item2
   $$
-  E.g. 
-  ( only item2 has changed, so item1 can be considerd as a constant Q.)
+
+  E.g. Only item2 has changed, so item1 can be considerd as a constant Q:
+  
   $$
-  $A = Q + XYZ
+  $A=Q+XYZ
   $$
+
   $$
-  $A_{oBOQ} = $A_{MBOQ} + $A_{DBOQ} = [Q + X*（Y-△y）*Z] + X*△y*Z = Q+ X*Y*Z
-  $$ 
-  △y: Qty of returned item2
-  X: Qty of Product A
-  Y: Qty of item2
-  Z: Price of item2
+  $A_{oBOQ} = $A_{MBOQ}+$A_{DBOQ}=[Q+X*(Y-△y)*Z]+X*△y*Z=Q+X*Y*Z
+  $$
+
+  **△y**: Qty of returned item2
+  **X**: Qty of Product A
+  **Y**: Qty of item2
+  **Z**: Price of item2
+
   Done!
 
 3.**Identification**
-  Assuming that there are more than 3 variables have changed, all we need to do is just identifying 
+  Assuming that there are more than 3 variables have changed, all we need to do is just identifying
+
+  whether
+
   $$
-  $A_{MBOQ}+$A_{DBOQ} = [Q+(X-△x)*Y*Z+△x*(Y-△y*Z]+△x*△y*Z 
+  $A_{MBOQ}+$A_{DBOQ} = [Q+(X-△x)*Y*Z+△x*(Y-△y)*Z]+△x*△y*Z 
   $$
+
   is equal to 
+
   $$
   Q+X*Y*Z
   $$
+
 4.**Find exceptions**
   If some cases failed, we can think about whether these cases exist actually. If not, this solution works.
 
