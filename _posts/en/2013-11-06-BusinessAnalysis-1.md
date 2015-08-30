@@ -60,22 +60,20 @@ For example, customers may have changed the amount of the rest of products while
 2. **Equation and derivation**
   Assuming that only the quantity of item can be changed, others are constant. Then we just need to identify:
   $$
-  $A_{oBOQ} = $A_{MBOQ}+$A_{DBOQ}
+  $A_{oBOQ} = $A_{MBOQ}+$A_{DBOQ}   
   $A_{oBOQ} = $item1+$item2
   $$
   E.g. 
   ( only item2 has changed, so item1 can be considerd as a constant Q.)
   $$
-  $A = Q + XYZ
+  $A = Q + XYZ   
   $A_{oBOQ} = $A_{MBOQ} + $A_{DBOQ} = [Q + X*（Y-△y）*Z] + X*△y*Z = Q+ X*Y*Z
   $$ 
   △y: Qty of returned item2
   X: Qty of Product A
   Y: Qty of item2
   Z: Price of item2
-  
   Done!
-  
 3. **Identification**
   Assuming that there are more than 3 variables have changed, all we need to do is just identifying 
   $$
