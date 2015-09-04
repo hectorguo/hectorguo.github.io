@@ -40,6 +40,14 @@ layout: default
         dsqBtn.addEventListener('click',function(){
         	!dsqDom.childElementCount && (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         });
+
+      // wrap table element
+      var tableDom = document.querySelectorAll('table');
+      if(tableDom.length) {
+        for (var i = tableDom.length - 1; i >= 0; i--) {
+          tableDom[i].outerHTML = '<div class="tb-container">'+tableDom[i].outerHTML+'</div>';
+        };
+      }
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
