@@ -216,17 +216,25 @@
     flex-direction: row;
     margin-bottom: 16px;
     background-color: $grey-color-light;
-    cursor: pointer;
+    // cursor: pointer;
     // padding: 20px;
     // border: 1px solid $grey-color-light;
     transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+    position: relative;
     @include media-query($on-palm) {
         -ms-flex-direction: column;
         -webkit-flex-direction: column;
         flex-direction: column;
     }
 
+    .item-over {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
     &:hover {
         box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
     }
@@ -243,7 +251,6 @@
         height: 120px;
         width: 120px;
         box-sizing: border-box;
-        background-color: $grey-color-light;
     }
     .des {
         padding: 15px;
@@ -259,7 +266,7 @@
         -ms-flex-direction: column;
         -webkit-flex-direction: column;
         flex-direction: column;
-        a {
+        a, .iconfont {
             font-size: $small-font-size;
         }
     }
@@ -275,31 +282,28 @@ table {
     border-style: solid;
     background-color: transparent;
     border-collapse: collapse;
-
     th {
         color: $grey-color-dark;
         // text-transform: uppercase;
+   
     }
-
     &, & tr, & tr td, & tr th {
         border-color: $grey-color-light;
     }
-
     tr {
         th {
             border-bottom-width: 1px;
             border-bottom-style: solid;
             text-align: left;
         }
-        th, td{
+        th, td {
             padding: 5px 20px;
         }
         th:last-child, td:last-child {
             border-right: 0px;
         }
     }
-
-    tbody > tr:nth-child(odd){
+    tbody > tr:nth-child(odd) {
         background-color: #ECEBE4;
     }
 }
@@ -308,6 +312,57 @@ table {
     overflow-x: auto;
     margin: 1em 0;
 }
+
 .MathJax_Display {
     padding: 2px 0;
+}
+
+.design {
+    width: 200px;
+    height: 150px;
+    float: left;
+    margin: 0 30px 30px 0;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+}
+
+.design-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.design-over {
+    opacity: 0;
+    filter: alpha(opacity = 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 20px;
+    font-size: 13px;
+    line-height: 2;
+    text-decoration: none;
+    background-color: white;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: all .28s;
+    &:hover {
+        opacity: 0.9;
+    }
+    @include media-query($on-palm) {
+        display: none;
+    }
 }

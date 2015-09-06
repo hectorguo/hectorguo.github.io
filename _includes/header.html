@@ -2,7 +2,7 @@
 
   <div class="wrapper">
 
-    {% for menu in site.data.i18n[page.lang] %}
+    {% for menu in site.data.i18n[page.lang].header %}
       <a class="site-title" href="{{menu[1].url}}">{{menu[1].name}}</a>
     {% endfor %}
 

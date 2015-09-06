@@ -2,9 +2,10 @@
 layout: default
 ---
 <div class="post">
-{% for project in page.projects %}
+<h1>{{site.data.i18n[page.lang].app}}</h1>
+{% for project in page.projects.app %}
 
-<div href="{{project.link}}" class="item">
+<div class="item">
   <img src="{{project.img}}" alt="{{project.name}}" class="thumbnail">
   <div class="des">
     <h4>{{project.name}}</h4>
@@ -12,26 +13,63 @@ layout: default
     <p>{{project.based}} / {{project.date}}</p>
     <ul class="inline-list">
     {% if project.link %}
-      <a href="{{project.link}}"><span class="iconfont"></span> Project Page</a></li>
+      <li><a href="{{project.link}}"><span class="iconfont"></span> Project Page</a></li>
     {% endif %}
     {% if project.github %}
-    <li><a href="{{project.github}}"><span class="iconfont"></span> View on Github</a></li>
+      <li><a href="{{project.github}}"><span class="iconfont">&#xe735;</span> View on Github</a></li>
     {% endif %}
     {% if project.chrome %}
-        <li><a href="{{project.chrome}}"><span class="iconfont"></span> View on Chrome Store</a></li>
+      <li><a href="{{project.chrome}}"><span class="iconfont"></span> View on Chrome Store</a></li>
     {% endif %}
     {% if project.ios %}
-        <li><a href="{{project.ios}}"><span class="iconfont"></span> View on App Store</a></li>
+      <li><a href="{{project.ios}}"><span class="iconfont"></span> View on App Store</a></li>
     {% endif %}
     {% if project.android %}
-        <li><a href="{{project.android}}"><span class="iconfont"></span> View on Google Play</a></li>
+      <li><a href="{{project.android}}"><span class="iconfont"></span> View on Google Play</a></li>
     {% endif %}
     {% if project.steam %}
-        <li><a href="{{project.steam}}"><span class="iconfont"></span> View on Steam</a></li>
+      <li><a href="{{project.steam}}"><span class="iconfont"></span> View on Steam</a></li>
     {% endif %}
     </ul>
   </div>
+  <!-- add a link filling the container-->
+    {% if project.link %}
+      <a href="{{project.link}}" class="item-over"></a>
+    {% endif %}
+    {% if project.github %}
+      <a href="{{project.github}}" class="item-over"></a>
+    {% endif %}
+    {% if project.chrome %}
+      <a href="{{project.chrome}}" class="item-over"></a>
+    {% endif %}
+    {% if project.ios %}
+      <a href="{{project.ios}}" class="item-over"></a>
+    {% endif %}
+    {% if project.android %}
+      <a href="{{project.android}}" class="item-over"></a>
+    {% endif %}
+    {% if project.steam %}
+      <a href="{{project.steam}}" class="item-over"></a>
+    {% endif %}
 </div>
 
 {% endfor %}
+
+<hr>
+<h1>{{site.data.i18n[page.lang].design}}</h1>
+
+
+<ol>
+{% for project in page.projects.design %}
+<li class="item design">
+    <a href="{{project.link}}" class="design-link" style="background-image:url({{project.img}})">
+    </a>
+    <a href="{{project.link}}" class="design-over">
+        <h4>{{project.name}}</h4>
+        <p>{{project.date}}</p>
+        <p>{{project.des}}</p>
+    </a>
+</li>
+{% endfor %}
+</ol>
 </div>
