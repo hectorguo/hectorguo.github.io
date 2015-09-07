@@ -3,6 +3,7 @@ layout: post
 title: 前端跨域问题解决方法集锦
 category: zh
 tags: front-end
+cover: "http://ww1.sinaimg.cn/large/6d0af205jw1evtwc2w59zj20mt08sgq8.jpg"
 ---
 
 近期遇到一些前台请求跨域问题，发现现在方案又多了一些新的，因此整理一下，希望有用。

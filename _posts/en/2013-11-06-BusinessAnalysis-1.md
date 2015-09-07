@@ -3,6 +3,7 @@ layout: post
 title: "BA Methods Summarys (1) —— Control variable method"
 category: en
 tags: Business-Analysis
+cover: "http://ww2.sinaimg.cn/large/6d0af205jw1evtvrnmx37j20q10d9n2e.jpg"
 ---
 
 There was a tough issue about requirement analysising I ever met on one of supply management projects. It was mainly to address BOQ changing case when customers do not need the products any more.

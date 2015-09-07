@@ -11,6 +11,7 @@ en:
         url: "/en/about"
   app: "Apps"
   design: "Designs"
+  readmore: "Read More"
 zh:
   header:
     home:
@@ -24,3 +25,4 @@ zh:
         url: "/zh/about"
   app: "应用"
   design: "设计"
+  readmore: "阅读此文"

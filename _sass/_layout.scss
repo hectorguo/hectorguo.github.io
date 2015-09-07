@@ -317,6 +317,23 @@ table {
     padding: 2px 0;
 }
 
+.cover {
+    height: 300px;
+    background-position: 50% 0;
+    background-size:cover;
+    background-repeat:no-repeat;
+
+    @include media-query($on-palm) {
+        height: auto;
+    }
+
+    img {
+        display: none;
+        @include media-query($on-palm) {
+            display: block;
+        }
+    }
+}
 .design {
     width: 200px;
     height: 150px;

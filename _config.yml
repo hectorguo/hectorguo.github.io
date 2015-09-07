@@ -17,9 +17,9 @@ kramdown:
 # Permalinks
 permalink:        /:categories/:title
 
-# # create sitemap
-# gems:
-#   - jekyll-sitemap
+# create sitemap
+gems:
+  - jekyll-sitemap
 
 # css compressed
 sass:
