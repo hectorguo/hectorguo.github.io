@@ -1,8 +1,11 @@
 ---
 layout: page
-title: 关于我
+title: 关于
 permalink: /zh/about/
 ---
+欢迎访问海旭的个人主页！
+
+本站基于 [Jekyll](http://jekyllrb.com/) 和 [Github Pages](https://pages.github.com/), 页面经过重新设计和改造，兼容移动平台，支持多语言。如果觉得还不错，欢迎在 [Github](https://github.com/hectorguo/hectorguo.github.io) fork使用（博文内容请勿复制）。
 
 ### 郭海旭
 
