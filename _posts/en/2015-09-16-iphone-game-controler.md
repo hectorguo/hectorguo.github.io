@@ -152,7 +152,7 @@ var socket = io();
 {% endhighlight %}
 
 Now, all the fundamental work has been done. The rest is just to add some UI to respond to users.
-The demo on the video has been hold on [Github](Link) , you can fork it to make your own funny games.
+This demo has been hold on [Github](https://github.com/hectorguo/iPhone-remote-game-controller) , you can fork it to make your own funny games.
 
 ## Rotation Data
 
