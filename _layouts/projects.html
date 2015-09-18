@@ -11,7 +11,25 @@ layout: default
     <h4>{{project.name}}</h4>
     <p>{{project.des}}</p>
     <p>{{project.based}} / {{project.date}}</p>
-    <ul class="inline-list">
+    {% if project.link %}
+      <a href="{{project.link}}"><span class="iconfont"></span> Project Page</a>
+    {% endif %}
+    {% if project.github %}
+      <a href="{{project.github}}"><span class="iconfont">&#xe735;</span> View on Github</a>
+    {% endif %}
+    {% if project.chrome %}
+      <a href="{{project.chrome}}"><span class="iconfont"></span> View on Chrome Store</a>
+    {% endif %}
+    {% if project.ios %}
+      <a href="{{project.ios}}"><span class="iconfont"></span> View on App Store</a>
+    {% endif %}
+    {% if project.android %}
+      <a href="{{project.android}}"><span class="iconfont"></span> View on Google Play</a>
+    {% endif %}
+    {% if project.steam %}
+      <a href="{{project.steam}}"><span class="iconfont"></span> View on Steam</a>
+    {% endif %}
+<!--     <ul class="inline-list">
     {% if project.link %}
       <li><a href="{{project.link}}"><span class="iconfont"></span> Project Page</a></li>
     {% endif %}
@@ -30,7 +48,7 @@ layout: default
     {% if project.steam %}
       <li><a href="{{project.steam}}"><span class="iconfont"></span> View on Steam</a></li>
     {% endif %}
-    </ul>
+    </ul> -->
   </div>
   <!-- add a link filling the container-->
     {% if project.link %}

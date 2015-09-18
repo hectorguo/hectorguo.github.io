@@ -375,7 +375,7 @@ table {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    transition: all .28s;
+    transition: opacity .28s ease;
     &:hover {
         opacity: 0.9;
     }
