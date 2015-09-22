@@ -2,13 +2,13 @@ en:
   header:
     home:
         name: "Home"
-        url: "/en/index"
+        url: "/en/index/"
     projects:
         name: "Projects"
-        url: "/en/projects"
+        url: "/en/projects/"
     about:
         name: "About"
-        url: "/en/about"
+        url: "/en/about/"
   app: "Apps"
   design: "Designs"
   readmore: "Read More"
@@ -19,10 +19,10 @@ zh:
         url: "/"
     projects:
         name: "项目"
-        url: "/zh/projects"
+        url: "/zh/projects/"
     about:
         name: "关于"
-        url: "/zh/about"
+        url: "/zh/about/"
   app: "应用"
   design: "设计"
   readmore: "阅读此文"
