@@ -3,7 +3,11 @@
   <div class="wrapper">
 
     {% for menu in site.data.i18n[page.lang].header %}
-      <a class="site-title" href="{{menu[1].url}}">{{menu[1].name}}</a>
+      {% if page.url == menu[1].url %}
+          <a class="site-title active" href="{{menu[1].url}}">{{menu[1].name}}</a>
+      {% else %}
+          <a class="site-title" href="{{menu[1].url}}">{{menu[1].name}}</a>
+      {% endif %}    
     {% endfor %}
 
     <nav class="site-nav">

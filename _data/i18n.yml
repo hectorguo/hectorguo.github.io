@@ -16,7 +16,7 @@ zh:
   header:
     home:
         name: "首页"
-        url: "/"
+        url: "/zh/index/"
     projects:
         name: "项目"
         url: "/zh/projects/"

@@ -16,13 +16,36 @@
     margin-bottom: 0;
     float: left;
     margin-right: 28px;
+    position: relative;
+    transition: none;
+
     &, &:hover {
         color: $grey-color-dark;
     }
+
+    &::before {
+        content:"";
+        position:absolute;
+        bottom:0;
+        width:100%;
+        height: 2px;
+        background-color: $grey-color-dark;
+        transform: scaleX(0);
+        transition: all .15s;
+    }
+
+    &:hover::before {
+        transform: scaleX(1);
+    }
+
     // prevent text wrap
     @include media-query($on-palm) {
         margin-right: 18px;
     }
+}
+
+.active::before {
+    transform: scaleX(1);
 }
 
 .site-nav {
