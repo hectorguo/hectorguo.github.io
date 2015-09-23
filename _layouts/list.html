@@ -12,8 +12,10 @@ layout: default
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
           {% if post.cover %}<p><a class="post-link cover" href="{{ post.url | prepend: site.baseurl }}" style="background-image:url({{post.cover}})"><img src="{{post.cover}}" alt=""></a></p>{% endif %}
-        {{ post.content | strip_html | truncate: 300 }}
-        <a href="{{ post.url | prepend: site.baseurl }}">{{site.data.i18n[page.lang].readmore}}</a>
+        <p>
+          {{ post.content | strip_html | truncate: 300 }}
+          <a href="{{ post.url | prepend: site.baseurl }}">{{site.data.i18n[page.lang].readmore}}</a>
+        </p>
       </li>
 </ul>
 {% endif %}
