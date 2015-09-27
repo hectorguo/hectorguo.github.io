@@ -4,7 +4,7 @@ layout: default
 <div class="home">
   <ol class="post-list">
     {% for post in site.categories[page.lang] %}
-    {% if post.type != "page" %}
+      {% if post.type != "page" %}
         <li>
           <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
@@ -16,9 +16,9 @@ layout: default
             {{ post.content | strip_html | truncate: 300 }}
             <a href="{{ post.url | prepend: site.baseurl }}">{{site.data.i18n[page.lang].readmore}}</a>
           </p>
+          <hr>
         </li>
-        <hr>
-    {% endif %}
+      {% endif %}
     {% endfor %}
   </ol>
   <p class="share"><a class="share-btn" href="{% if page.lang == "en" %}{{ "/en/feed.xml" | prepend: site.baseurl }}{% else %}{{ "/feed.xml" | prepend: site.baseurl }}{% endif %}">
