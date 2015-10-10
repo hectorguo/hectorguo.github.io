@@ -251,16 +251,10 @@
         flex-direction: column;
     }
 
-    .item-over {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-    }
     &:hover {
         box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
     }
+
     h1, h2, h3, h4 {
         margin: 0;
     }
@@ -292,6 +286,14 @@
         a, .iconfont {
             font-size: $small-font-size;
         }
+    }
+
+    .item-link {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
     }
 }
 
@@ -362,11 +364,11 @@ table {
     height: 150px;
     float: left;
     margin: 0 30px 30px 0;
-    display: inline-block;
     position: relative;
     text-align: center;
     padding: 10px;
     background-color: white;
+    display: inline-block; // backward compatible
 }
 
 .design-link {
