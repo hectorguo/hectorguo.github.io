@@ -39,34 +39,34 @@ contacts:
   -
     name: "微博"
     url: "http://weibo.com/hectorguo"
-    icon: "&#xe809;"
+    icon: "&#xe91b;"
   -
     name: "知乎"
     url: "http://www.zhihu.com/people/hectorguo"
-    icon: "&#xe64c;"
+    icon: "&#xe91c;"
   - 
     name: "Github"
     url: "https://github.com/hectorguo"
-    icon: "&#xe735;"
+    icon: "&#xe925;"
   -
     name: "Linkedin"
     url: "https://www.linkedin.com/in/hectorguo"
-    icon: "&#xe695;"
+    icon: "&#xe929;"
   en:
   -
     name: "Twitter"
     url: "https://twitter.com/hectorguo"
-    icon: "&#xe8a8;"
+    icon: "&#xe922;"
   -
     name: "Github"
     url: "https://github.com/hectorguo"
-    icon: "&#xe735;"
+    icon: "&#xe925;"
   -
     name: "Linkedin"
     url: "https://www.linkedin.com/in/hectorguo"
-    icon: "&#xe695;"
+    icon: "&#xe929;"
 
-paginate:         5
+# paginate:         5
 
 encoding:         utf-8
 

@@ -13,7 +13,7 @@ layout: default
           </h2>
             {% if post.cover %}<p><a class="post-link cover" href="{{ post.url | prepend: site.baseurl }}" style="background-image:url({{post.cover}})"><img src="{{post.cover}}" alt=""></a></p>{% endif %}
           <p>
-            {{ post.content | strip_html | truncate: 300 }}
+            {{ post.content | markdownify | strip_html | truncate: 300 }}
             <a href="{{ post.url | prepend: site.baseurl }}">{{site.data.i18n[page.lang].readmore}}</a>
           </p>
           <hr>
@@ -22,7 +22,7 @@ layout: default
     {% endfor %}
   </ol>
   <p class="share"><a class="share-btn" href="{% if page.lang == "en" %}{{ "/en/feed.xml" | prepend: site.baseurl }}{% else %}{{ "/feed.xml" | prepend: site.baseurl }}{% endif %}">
-  <span class="iconfont">&#xe665;</span>
+  <span class="iconfont">&#xe923;</span>
   RSS</a></p>
 
 </div>
