@@ -22,12 +22,12 @@ OS X还有一个自带的工作流制作器Automator，真的是人性化的工�
 因为需要有个文档来保存获取的单词定义，因此需要用shell来操作。在左侧搜索`shell`即可看到`运行Shell脚本`的工作流，拖拽过来，输入下面代码即可：
 
 {% highlight bash %}
-# 将单词释义保存到桌面的wordlist.txt文件下，若文件存在，则直接追加
-FILE=$HOME/Desktop/wordlist.txt
-if [ ! -f $FILE ]; then
-touch $FILE
-fi
-echo -e "\n$1" >> $FILE
+  # 将单词释义保存到桌面的wordlist.txt文件下，若文件存在，则直接追加
+  FILE=$HOME/Desktop/wordlist.txt
+  if [ ! -f $FILE ]; then
+  touch $FILE
+  fi
+  echo -e "\n$1" >> $FILE
 {% endhighlight %}
 
 ![](http://ww4.sinaimg.cn/large/6d0af205jw1exey5a1o61j20h80as407.jpg)
