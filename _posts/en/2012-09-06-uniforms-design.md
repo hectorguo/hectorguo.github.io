@@ -12,6 +12,12 @@ So I though about a method which can translate the pictures of all my classmates
 
 ![](http://ww2.sinaimg.cn/large/6d0af205jw1evslvmgedfj20xc0fowjf.jpg)
 
+## Principles of Design
+
+1. Alignment - Edges line up along common rows or columns
+2. Closure - To perceive a set of individual elements as a single, recognizable pattern
+3. Constancy - To perceive objects as unchanging
+
 ## Front
 ![](http://ww2.sinaimg.cn/large/6d0af205jw1evsmo46q2mj20ib0q0dks.jpg)
 
