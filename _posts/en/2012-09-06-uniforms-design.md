@@ -22,3 +22,9 @@ So I though about a method which can translate the pictures of all my classmates
 ![](http://ww1.sinaimg.cn/large/6d0af205jw1evsmt40yu5j210w0pitiy.jpg)
 
 ![](http://ww4.sinaimg.cn/large/6d0af205jw1evsmw6ywq7j21220r8n75.jpg)
+
+## How it works
+
+You may be curious about the building process of these avatars. All we need to do is just take a picture for your model, and make it into a monochrome style by using Photoshop, Picasa or some other image processing tools.
+
+![](http://ww2.sinaimg.cn/large/6d0af205jw1exka7uwk7ij20w20fatct.jpg)
