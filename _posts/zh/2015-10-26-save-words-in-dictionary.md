@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 利用Automator自制生词本
+title: 让OS X词典具备保存单词功能
 categories: ['zh']
-tags: ['Mac']
+tags: ['Mac','Automator']
 published: True
 cover: "http://ww2.sinaimg.cn/large/6d0af205jw1exeycry7e0j20nw0ay42t.jpg"
 ---
