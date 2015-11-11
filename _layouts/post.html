@@ -13,6 +13,21 @@ layout: default
     {{ content }}
   </article>
 
+  {% if page.lang == "en" %}
+      <!-- AdSense_HG -->
+      <p>
+        <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-5750134439955936"
+           data-ad-slot="8759026000"
+           data-ad-format="auto"></ins>
+      </p>
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+  {% endif %}
+  
   <p class="share">
   	<a class="share-btn" id="comments">
   		<span class="iconfont">0</span>
