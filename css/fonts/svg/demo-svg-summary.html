@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>SVG Icons</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+			h2{
+				margin-top: 2em;
+			}
+    </style>
+</head>
+
+<body>
+    <!-- 方案1:CSS Sprite -->
+    <h2>方案1:CSS Sprite</h2>
+    
+    <style>
+    .sprite-icon {
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-image: url(sprite.svg);
+    }
+    
+    .sprite-icon.icon-share2 {
+        width: 32px;
+        height: 32px;
+        background-position: 0 0;
+    }
+    
+    .sprite-icon.icon-feed2 {
+        width: 32px;
+        height: 32px;
+        background-position: -64px 0;
+    }
+    
+    .sprite-icon.icon-chrome {
+        width: 32px;
+        height: 32px;
+        background-position: -128px 0;
+    }
+    </style>
+    
+    <span class="sprite-icon icon-share2"></span>
+    <span class="sprite-icon icon-feed2"></span>
+    <span class="sprite-icon icon-chrome"></span>
+    
+
+
+	<!-- 方案2:Background Image (路径引用) -->
+    <h2>方案2:Background Image (路径引用)</h2>
+    
+    <style>
+    .path-icon {
+        display: inline-block;
+    }
+    
+    .path-icon.icon-share2 {
+        width: 32px;
+        height: 32px;
+        background-image: url(SVG/share2.svg)
+    }
+    
+    .path-icon.icon-feed2 {
+        width: 32px;
+        height: 32px;
+        background-image: url(SVG/feed2.svg)
+    }
+    
+    .path-icon.icon-chrome {
+        width: 32px;
+        height: 32px;
+        background-image: url(SVG/chrome.svg)
+    }
+    </style>
+    
+    <span class="path-icon icon-share2"></span>
+    <span class="path-icon icon-feed2"></span>
+    <span class="path-icon icon-chrome"></span>
+    
+
+
+	<!-- 方案3:Background Image - Data Uri (直接嵌入SVG) -->
+    <h2>方案3:Background Image - Data Uri (直接嵌入SVG)</h2>
+    
+    <style>
+    .embed-icon {
+        display: inline-block;
+    }
+    
+    .embed-icon.icon-share2 {
+        width: 32px;
+        height: 32px;
+        background-image: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32"><path fill="#828282" d="M27 22c-1.411 0-2.685 0.586-3.594 1.526l-13.469-6.734c0.041-0.258 0.063-0.522 0.063-0.791s-0.022-0.534-0.063-0.791l13.469-6.734c0.909 0.94 2.183 1.526 3.594 1.526 2.761 0 5-2.239 5-5s-2.239-5-5-5-5 2.239-5 5c0 0.269 0.022 0.534 0.063 0.791l-13.469 6.734c-0.909-0.94-2.183-1.526-3.594-1.526-2.761 0-5 2.239-5 5s2.239 5 5 5c1.411 0 2.685-0.586 3.594-1.526l13.469 6.734c-0.041 0.258-0.063 0.522-0.063 0.791 0 2.761 2.239 5 5 5s5-2.239 5-5c0-2.761-2.239-5-5-5z"></path></svg>')
+    }
+    
+    .embed-icon.icon-feed2 {
+        width: 32px;
+        height: 32px;
+        background-image: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32"><path fill="#828282" d="M4.259 23.467c-2.35 0-4.259 1.917-4.259 4.252 0 2.349 1.909 4.244 4.259 4.244 2.358 0 4.265-1.895 4.265-4.244-0-2.336-1.907-4.252-4.265-4.252zM0.005 10.873v6.133c3.993 0 7.749 1.562 10.577 4.391 2.825 2.822 4.384 6.595 4.384 10.603h6.16c-0-11.651-9.478-21.127-21.121-21.127zM0.012 0v6.136c14.243 0 25.836 11.604 25.836 25.864h6.152c0-17.64-14.352-32-31.988-32z"></path></svg>')
+    }
+    
+    .embed-icon.icon-chrome {
+        width: 32px;
+        height: 32px;
+        background-image: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32"><path fill="#828282" d="M8.071 13.954l-4.579-7.931c2.932-3.671 7.445-6.023 12.508-6.023 5.857 0 10.978 3.148 13.767 7.844h-13.055c-0.235-0.020-0.472-0.031-0.711-0.031-3.809 0-7.018 2.614-7.929 6.142zM21.728 10.156h9.171c0.711 1.81 1.101 3.781 1.101 5.844 0 8.776-7.066 15.9-15.818 15.998l6.544-11.334c0.921-1.324 1.462-2.932 1.462-4.664 0-2.287-0.943-4.357-2.459-5.844zM10.188 16c0-3.205 2.607-5.813 5.813-5.813s5.813 2.607 5.813 5.813c0 3.205-2.608 5.813-5.813 5.813s-5.813-2.608-5.813-5.813zM18.193 23.889l-4.581 7.934c-7.704-1.153-13.613-7.797-13.613-15.822 0-2.851 0.746-5.526 2.053-7.845l6.532 11.314c1.308 2.785 4.14 4.718 7.415 4.718 0.759 0 1.495-0.104 2.193-0.299z"></path></svg>')
+    }
+    </style>
+
+    <span class="embed-icon icon-share2"></span>
+    <span class="embed-icon icon-feed2"></span>
+    <span class="embed-icon icon-chrome"></span>
+
+
+
+
+    <!-- 方案4:SVG <use> - 内嵌 -->
+    <h2>方案4:SVG &lt;use&gt; - 内嵌</h2>
+    
+    <svg style="display:none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-share2" viewBox="0 0 1024 1024">
+                <title>share2</title>
+                <path class="path1" d="M864 704c-45.16 0-85.92 18.738-115.012 48.83l-431.004-215.502c1.314-8.252 2.016-16.706 2.016-25.328s-0.702-17.076-2.016-25.326l431.004-215.502c29.092 30.090 69.852 48.828 115.012 48.828 88.366 0 160-71.634 160-160s-71.634-160-160-160-160 71.634-160 160c0 8.622 0.704 17.076 2.016 25.326l-431.004 215.504c-29.092-30.090-69.852-48.83-115.012-48.83-88.366 0-160 71.636-160 160 0 88.368 71.634 160 160 160 45.16 0 85.92-18.738 115.012-48.828l431.004 215.502c-1.312 8.25-2.016 16.704-2.016 25.326 0 88.368 71.634 160 160 160s160-71.632 160-160c0-88.364-71.634-160-160-160z"></path>
+            </symbol>
+            <symbol id="icon-feed2" viewBox="0 0 1024 1024">
+                <title>feed2</title>
+                <path class="path1" d="M136.294 750.93c-75.196 0-136.292 61.334-136.292 136.076 0 75.154 61.1 135.802 136.292 135.802 75.466 0 136.494-60.648 136.494-135.802-0.002-74.742-61.024-136.076-136.494-136.076zM0.156 347.93v196.258c127.784 0 247.958 49.972 338.458 140.512 90.384 90.318 140.282 211.036 140.282 339.3h197.122c-0.002-372.82-303.282-676.070-675.862-676.070zM0.388 0v196.356c455.782 0 826.756 371.334 826.756 827.644h196.856c0-564.47-459.254-1024-1023.612-1024z"></path>
+            </symbol>
+            <symbol id="icon-chrome" viewBox="0 0 1024 1024">
+                <title>chrome</title>
+                <path class="path1" d="M258.278 446.542l-146.532-253.802c93.818-117.464 238.234-192.74 400.254-192.74 187.432 0 351.31 100.736 440.532 251h-417.77c-7.504-0.65-15.092-1-22.762-1-121.874 0-224.578 83.644-253.722 196.542zM695.306 325h293.46c22.74 57.93 35.234 121.004 35.234 187 0 280.826-226.1 508.804-506.186 511.926l209.394-362.678c29.48-42.378 46.792-93.826 46.792-149.248 0-73.17-30.164-139.42-78.694-187zM326 512c0-102.56 83.44-186 186-186s186 83.44 186 186c0 102.56-83.44 186-186 186s-186-83.44-186-186zM582.182 764.442l-146.578 253.878c-246.532-36.884-435.604-249.516-435.604-506.32 0-91.218 23.884-176.846 65.696-251.024l209.030 362.054c41.868 89.112 132.476 150.97 237.274 150.97 24.3 0 47.836-3.34 70.182-9.558z"></path>
+            </symbol>
+        </defs>
+    </svg>
+    
+    <style>
+    .use-embed-icon {
+        width: 32px;
+        height: 32px;
+        fill: #828282;
+    }
+    </style>
+    
+    <svg class="use-embed-icon icon-share2">
+        <use xlink:href="#icon-share2"></use>
+    </svg>
+    <svg class="use-embed-icon icon-feed2">
+        <use xlink:href="#icon-feed2"></use>
+    </svg>
+    <svg class="use-embed-icon icon-chrome">
+        <use xlink:href="#icon-chrome"></use>
+    </svg>
+    
+
+
+
+    <!-- 方案5:SVG <use> - 外部引用 -->
+    <h2>方案5:SVG &lt;use&gt; - 外部引用</h2>
+    
+    <style>
+    .use-path-icon {
+        width: 32px;
+        height: 32px;
+        fill: #828282;
+    }
+    </style>
+    
+    <svg class="use-path-icon icon-share2">
+        <use xlink:href="symbol-defs.svg#icon-share2"></use>
+    </svg>
+    <svg class="use-path-icon icon-feed2">
+        <use xlink:href="symbol-defs.svg#icon-feed2"></use>
+    </svg>
+    <svg class="use-path-icon icon-chrome">
+        <use xlink:href="symbol-defs.svg#icon-chrome"></use>
+    </svg>
+    
+
+
+    <!-- 方案6:<img> -->
+    <h2>方案6:&lt;img&gt;</h2>
+    
+    <img src="SVG/share2.svg" alt="share">
+    <img src="SVG/feed2.svg" alt="feed">
+    <img src="SVG/chrome.svg" alt="chrome">
+
+</body>
+
+</html>
