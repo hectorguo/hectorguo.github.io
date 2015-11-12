@@ -89,19 +89,25 @@ cover: "http://ww2.sinaimg.cn/large/6d0af205jw1evtvrnmx37j20q10d9n2e.jpg"
 
     原BOQ的产品A金额 = MBOQ产品A金额+DBOQ的产品A金额
     原BOQ的产品A金额 = item1金额 + item2金额。  
+   
    假设只有item2发生变更，则item1金额可看作常数Q，
-
+    
     产品A金额 = Q+ X*Y*Z
+
     MBOQ产品A金额 + DBOQ产品A金额 = [Q + X*（ Y-△y）*Z] + X*△y*Z = Q+ X*Y*Z 
+
     （其中，△y代表退货的item2数量，X、Y、Z分别代表原来的产品A的套数、item2数量、item2单价）
+   
    验证成功！
 
  **3.验证多个变量的场景：**
   假如三个变量都发生变化（又退货，又改了item数量，又改了产品套数），如退了产品套数△x中的△y数量的item2，那只需验证
 
     MBOQ产品A金额 + DBOQ产品A金额 = [Q + （X-△x）*Y*Z+△x*（ Y-△y）*Z ] + △x*△y*Z  
+  
   是否等于 
-    Q+ X*Y*Z？
+  
+    Q+ X*Y*Z
 
  **4.查找不适配的场景业务上是否存在**
   如果验证错误，则再看下，该场景在业务上是否存在。 假如不存在，则该方案是ok的。
