@@ -76,18 +76,17 @@ layout: default
 <hr>
 <h1>{{site.data.i18n[page.lang].design}}</h1>
 
-
-<ol>
+<ol class="clear">
 {% for project in page.projects.design %}
-<li class="item design">
-    <a href="{{project.link}}" class="design-link" style="background-image:url({{project.img}})">
-    </a>
-    <a href="{{project.link}}" class="design-over">
-        <h4>{{project.name}}</h4>
-        <p>{{project.date}}</p>
-        <p>{{project.des}}</p>
-    </a>
-</li>
+  <li class="item design">
+      <a href="{{project.link}}" class="design-link" style="background-image:url({{project.img}})">
+      </a>
+      <a href="{{project.link}}" class="design-over">
+          <h4>{{project.name}}</h4>
+          <p>{{project.date}}</p>
+          <p>{{project.des}}</p>
+      </a>
+  </li>
 {% endfor %}
 </ol>
 </div>

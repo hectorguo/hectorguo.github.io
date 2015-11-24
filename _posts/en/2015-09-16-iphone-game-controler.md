@@ -7,7 +7,7 @@ published: True
 cover: 'http://ww3.sinaimg.cn/large/6d0af205jw1ew4mio6htfj20go09gwgt.jpg'
 ---
 
-Do you like playing motion-sensing games like this? Have you ever thought that it might be prohibitively expensive to play such a cool game? Actually, you can use your mobile phone to play just like that. Below are a demo.
+Do you like playing motion-sensing games like this? Have you ever thought that it might be prohibitively expensive to play such a cool game? Actually, you can use your mobile phone to play just like that. Below is a demo.
 
 <video poster="//i.imgur.com/hDSmdI9h.jpg" preload="auto" autoplay="autoplay" muted="muted" loop="loop" webkit-playsinline="" style="width: 300px; height: 360px;">
     <source src="//i.imgur.com/hDSmdI9.webm" type="video/webm">
