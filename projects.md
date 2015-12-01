@@ -77,9 +77,9 @@ projects:
     img: "http://ww2.sinaimg.cn/large/6d0af205jw1evsonbeh6aj205k046t8j.jpg"
     des: "工作中常用PPT模版"
   -
-    name: "办公IT Logo"
-    date: "2013.07"
-    des: "为办公IT部门设计的Logo"
+    name: "红包设计"
+    date: "2015.10"
+    des: "为班长结婚特别设计的红包"
 ---
 
 二维码定位，公交换乘查询 － js，html
