@@ -2,11 +2,10 @@
 layout: post
 title: 让OS X词典具备保存单词功能
 categories: ['zh']
-tags: ['Mac','Automator']
+tags: ['Mac开发','Shell']
 published: True
 cover: "http://ww2.sinaimg.cn/large/6d0af205jw1exeycry7e0j20nw0ay42t.jpg"
 ---
-
 发现OS X里的词典真的异常方便啊，在MacBook上只需三指轻按触摸板，就能查到页面上的单词释义，而且任何界面都可以查，着实省下了好多查单词时间。可是该词典并不支持添加生词本或者保存历史记录，导致有些生词查了好几次还是没有记住，要是能直接保存并支持导出，那真的就太完美了。搜了一下，真的木有插件类的东西啊，那就自己动手啦。
 
 OS X还有一个自带的工作流制作器Automator，真的是人性化的工具啊。你可以用这个把一系列系统相关的操作合并到一起，生成一个工作流，用的时候一键就搞定。不废话，下面介绍下如何使用Automator制作一个简单的生词本。

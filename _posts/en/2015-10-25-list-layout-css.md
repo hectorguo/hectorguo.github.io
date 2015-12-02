@@ -2,7 +2,7 @@
 layout: post
 title: Responsive Lists Layout - Three CSS solutions
 categories: ['en']
-tags: ['CSS']
+tags: ['CSS','Front-end']
 published: True
 cover: "http://ww2.sinaimg.cn/large/6d0af205jw1exdedpktx2j20xi0k4tb8.jpg"
 ---

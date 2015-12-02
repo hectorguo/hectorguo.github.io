@@ -2,7 +2,7 @@
 layout: post
 title: Use iPhone to build a Remote Game Controller just like Wii
 categories: ['en']
-tags: ['html5']
+tags: ['HTML5','NodeJS','Front-end']
 published: True
 cover: 'http://ww3.sinaimg.cn/large/6d0af205jw1ew4mio6htfj20go09gwgt.jpg'
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Browser Interface Design
 categories: ['en']
-tags: []
+tags: ['Design']
 published: True
 
 ---

@@ -2,9 +2,8 @@
 layout: post
 title: "Mapbox Demo - American Universities"
 categories: ['en']
-tags: ['Visualization']
+tags: ['Visualization','Design']
 published: True
-cover: "http://ww4.sinaimg.cn/large/6d0af205jw1eykngeazk4j214l0eu0we.jpg"
 ---
 
 This is a test for using the amazing Mapbox.
@@ -29,7 +28,7 @@ This is a test for using the amazing Mapbox.
 <div class="map-container">
   <div id='map'></div>
   <nav id="options">
-    <strong>托福最低要求</strong>
+    <strong>TOEFL</strong>
     <ul>
       <li>
         <input type="checkbox" id="op1" value="100" checked />
@@ -52,7 +51,7 @@ This is a test for using the amazing Mapbox.
       <li>
         <input type="checkbox" id="op4" value="1" checked />
         <label for="op4">
-          <span>80以下</span>
+          <span>0~80</span>
         </label>
       </li>
     </ul>

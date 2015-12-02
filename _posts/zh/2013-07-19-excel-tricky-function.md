@@ -2,7 +2,7 @@
 layout: post
 title: 工作中Excel里两个实用功能分享——vlookup函数及数据透视表
 categories: ['zh']
-tags: ['excel']
+tags: ['效率提升']
 published: True
 cover: "http://ww4.sinaimg.cn/large/6d0af205jw1ewrhx7vw23j20gs08m400.jpg"
 ---

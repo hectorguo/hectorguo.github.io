@@ -3,7 +3,7 @@ layout: post
 title: "利用html5识别文件类型"
 published: true
 category: zh
-tags: HTML5
+tags: ['HTML5','前端开发']
 cover: "http://ww4.sinaimg.cn/large/6d0af205jw1evtw72ji9pj20hs0aoq4b.jpg"
 ---
 

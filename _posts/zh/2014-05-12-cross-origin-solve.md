@@ -2,13 +2,14 @@
 layout: post
 title: 前端跨域问题解决方法集锦
 category: zh
-tags: front-end
+tags: 前端开发
 cover: "http://ww1.sinaimg.cn/large/6d0af205jw1evtwc2w59zj20mt08sgq8.jpg"
 ---
-* TOC
-{:toc}
 
 近期遇到一些前台请求跨域问题，发现现在方案又多了一些新的，因此整理一下，希望有用。
+
+* TOC
+{:toc}
 
 ## 何为跨域（CORS）?
 > 所謂跨站HTTP請求(Cross-site HTTP request)是指發出請求所在網域不同於請求所指向之網域的HTTP請求，例如網域A (http://domaina.example) 的網頁載入一個<img>元素向網域B(http://domainb.foo) 請求影像資源(http://domainb.foo/image.jpg) 。這種作法在現今各網頁相當常見，網頁常常會載入其他網站資源，像是CSS樣式表、影像、程式碼等等資源。

@@ -1,0 +1,32 @@
+---
+layout: page
+---
+<!-- 过滤英文版的tags
+site.tags: ['tag1', 'tag2', 'tag3']
+site.tags['tag1']: [{post.title:'xxx',post.lang:'zh'}, {post.title:'xx2',post.lang:'en'}] -->
+{% capture tags %}
+  {% for tag in site.tags %}
+    {% assign tag_name = tag[0] %}
+    {% for post in site.tags[tag_name] %}
+        {% if post.lang == page.lang %}
+            {{tag_name}}
+            {% break %}
+        {% endif %}
+    {% endfor %}
+  {% endfor %}
+{% endcapture %}
+
+<!-- tags排序 -->
+{% assign sorted_tags = tags | split:' ' | sort %}
+
+{% for tag_name in sorted_tags %}
+    <h2 id="{{ tag_name | replace:' ','-' | replace:'#','sharp' }}">{{ tag_name }}</h2>
+    <ul class="tags-list">
+        {% assign posts = site.tags[tag_name] | where:'lang', page.lang %}
+        {% for post in posts %}
+        <li>
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><span class="post-meta">  {{post.date | date: "%F"}}</span>
+        </li>
+        {% endfor %}
+    </ul>
+{% endfor %}

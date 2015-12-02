@@ -2,7 +2,7 @@
 layout: post
 title: "CSS: Font Setting to Adapt for Multi Platforms"
 categories: ['en']
-tags: ['css']
+tags: ['CSS','Front-end']
 published: True
 cover: "http://ww3.sinaimg.cn/large/6d0af205jw1ew72255s7ej20iw07sq3a.jpg"
 ---

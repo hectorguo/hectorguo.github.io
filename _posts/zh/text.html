@@ -1,0 +1,56 @@
+<h2>text</h2>
+<input id="ignores" type="text" placeholder="is,I,i,are,we,they">
+<input id="wordCount" type="textarea">
+<button id="get">Get Words</button>
+<p id="audio"></p>
+<p id="result"></p>
+<script>
+function render() {
+    var text = document.getElementById('wordCount').value,
+        ignores = document.getElementById('ignores').value ? document.getElementById('ignores').value.split(',') : ['and', 'the', 'to', 'a', 'of', 'for', 'as', 'i', 'with', 'it', 'is', 'on', 'that', 'this', 'can', 'in', 'be', 'has', 'if'],
+        list = getFrequency(text, ignores),
+        dom = ['<ul>'],
+        audio = ['<ul>'];
+
+
+    for (var i = 10; i < list.length; i++) {
+        dom.push('<li>', list[i].text, ':', list[i].frequency, '</li>');
+        audio.push('<li>', 'https://ssl.gstatic.com/dictionary/static/sounds/de/0/', list[i].text, '.mp3', '</li>')
+    }
+    dom.push('</ul>');
+    audio.push('</ul>');
+    document.getElementById('result').innerHTML = dom.join('');
+    document.getElementById('audio').innerHTML = audio.join('');
+}
+
+function getFrequency(text, ignores) {
+    var words = text ? text.toLowerCase().match(/[a-zA-Z']+/g) : [],
+        list = {};
+    sortArr = [];
+
+    for (var i = 0; i < words.length; i++) {
+        if (ignores && ignores.length && ignores.indexOf(words[i]) !== -1) {
+            continue;
+        }
+        list[words[i]] = list[words[i]] || 0;
+        list[words[i]]++;
+
+    }
+
+    // sort by frequency
+    for (var i in list) {
+        sortArr.push({
+            text: i,
+            frequency: list[i]
+        });
+    }
+
+    sortArr.sort(function(a, b) {
+        return b.frequency - a.frequency
+    });
+    return sortArr;
+}
+document.getElementById('get').addEventListener('click', function() {
+    render()
+});
+</script>

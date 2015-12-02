@@ -2,7 +2,7 @@
 layout: post
 title: Should We Abandon GIF ?
 categories: ['en']
-tags: ['Media Tech']
+tags: ['Media-Tech']
 published: True
 cover: http://ww1.sinaimg.cn/large/6d0af205gw1eycdd5zefhj20hd09swfx.jpg
 ---

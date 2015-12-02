@@ -183,27 +183,45 @@
 
 .post-content {
     margin-bottom: $spacing-unit;
-    h2, h3, h4 {
-        margin-top: 1.5em;
-        margin-bottom: 1.2em;
+    h2, h3, h4, h5, h6 {
+        margin-top: 1em;
+        margin-bottom: 16px;
+        // font-weight: bold;
+        line-height:1.4;
+        // margin-top: 1.5em;
+        // margin-bottom: 1.2em;
     }
     h2 {
-        font-size: 32px;
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
+        padding-bottom: 0.3em;
+        font-size: 1.75em;
+        line-height: 1.225;
+        border-bottom: 1px solid $grey-color-light;
+        // font-size: 32px;
+        // @include media-query($on-laptop) {
+        //     font-size: 28px;
+        // }
     }
     h3 {
-        font-size: 26px;
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
+        font-size: 1.5em;
+        line-height:1.43;
+        // font-size: 26px;
+        // @include media-query($on-laptop) {
+        //     font-size: 22px;
+        // }
     }
     h4 {
-        font-size: 20px;
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
+        font-size: 1.25em;
+        // font-size: 20px;
+        // @include media-query($on-laptop) {
+        //     font-size: 18px;
+        // }
+    }
+    h5 {
+        font-size: 1em;
+    }
+    h6 {
+        font-size: 1em;
+        color: $grey-color;
     }
 }
 
@@ -411,4 +429,28 @@ table {
     @include media-query($on-palm) {
         display: none;
     }
+}
+
+.tags-list {
+    list-style: none;
+    margin-left: 0;
+
+    .post-meta {
+        float:right;
+    }
+    
+    li:before {
+        content: "• ";
+        color: $brand-color;
+        margin-right: 0.3em;
+    }
+}
+.tags {
+    display: inline-block;
+    background:none;
+    border-color: $grey-color;
+    border-radius: 0;
+    margin-left: 0.5em;
+    padding: 0 .5em;
+    // box-shadow: 1px 1px 0 0 $grey-color-light;
 }

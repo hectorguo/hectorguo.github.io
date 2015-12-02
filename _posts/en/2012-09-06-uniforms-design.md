@@ -2,7 +2,7 @@
 layout: post
 title: Uniforms Design
 categories: ['en']
-tags: ['design']
+tags: ['Design']
 published: True
 
 ---

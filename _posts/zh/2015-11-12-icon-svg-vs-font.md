@@ -2,13 +2,15 @@
 layout: post
 title: 高清图标方案对比:SVG与字体图标
 categories: ['zh']
-tags: ['css']
+tags: ['CSS','前端开发']
 published: True
 
 ---
-
 最近读了 [SitePoint](http://www.sitepoint.com/icon-fonts-vs-svg-debate/) 的文章，发现`SVG`的图标方案有很多地方优于字体图标方案，如语义性良好，以及无损还原显示效果。
 于是兴冲冲的准备把自己的站点的图标都改成SVG方案，可折腾了许久后，发现会出现各种各样的问题，并不是想象中如此完美，在此做个对比总结，分享给有需要的人。
+
+* TOC
+{:toc}
 
 ## 简评
 
