@@ -20,7 +20,7 @@ layout: default
     </article>
 
     <!-- AdSense_HG -->
-    {% if page.lang == "en" %}
+<!--     {% if page.lang == "en" %}
     <p>
         <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5750134439955936" data-ad-slot="8759026000" data-ad-format="auto"></ins>
     </p>
@@ -28,12 +28,12 @@ layout: default
     <script>
     (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
-    {% endif %}
+    {% endif %} -->
 
     <!-- Comments and Share -->
     <p class="share">
         <a class="share-btn" id="comments">
-            <span class="disqus-comment-count iconfont" data-disqus-identifier="{{ page.url | prepend: site.baseurl | prepend: site.url }}">0</span> {{site.data.i18n[page.lang].comments}}
+            <span class="disqus-comment-count iconfont" data-disqus-url="{{ page.url | prepend: site.baseurl | prepend: site.url }}">0</span> {{site.data.i18n[page.lang].comments}}
         </a>
         <a class="share-btn" target="blank" href="http://service.weibo.com/share/share.php?url={{ page.url | prepend: site.baseurl | prepend: site.url }}&appkey=&title={{ page.title | cgi_escape }}&pic={{ page.cover }}&language=zh_cn">
             <span class="iconfont">&#xe91d;</span> {{site.data.i18n[page.lang].share}}
