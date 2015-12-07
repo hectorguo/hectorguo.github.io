@@ -27,6 +27,10 @@ sass:
 
 weibo_appkey: "1908369758"
 
+# disqus comments
+comments:
+  short_name: "hectorguo"
+
 # i18n
 author:
   zh: "郭海旭"

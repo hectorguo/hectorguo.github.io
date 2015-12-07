@@ -1,74 +1,76 @@
 ---
 layout: default
 ---
+
 <div class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
-      {% for tag in page.tags %}
-      <code class="post-meta tags"> 
+    <header class="post-header">
+        <h1 class="post-title">{{ page.title }}</h1>
+        <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %} {% for tag in page.tags %}
+            <code class="post-meta tags"> 
         <a href="{{ site.baseurl }}/{{ page.lang }}/tags/#{{ tag }}">{{ tag }}</a>
-      </code>
-      {% endfor %}
+      </code> {% endfor %}
+        </p>
+    </header>
+
+    <article class="post-content">
+        {% if page.cover %}
+        <p><img src="{{ page.cover }}" alt="{{ page.title }}"></p>
+        {% endif %}
+        {{ content }}
+    </article>
+
+    <!-- AdSense_HG -->
+    {% if page.lang == "en" %}
+    <p>
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5750134439955936" data-ad-slot="8759026000" data-ad-format="auto"></ins>
     </p>
-  </header>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    {% endif %}
 
-  <article class="post-content">
-  {% if page.cover %}<p><img src="{{ page.cover }}" alt="{{ page.title }}"></p>{% endif %}
-    {{ content }}
-  </article>
-
-  {% if page.lang == "en" %}
-      <!-- AdSense_HG -->
-      <p>
-        <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-5750134439955936"
-           data-ad-slot="8759026000"
-           data-ad-format="auto"></ins>
-      </p>
-      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-  {% endif %}
-  
-  <p class="share">
-  	<a class="share-btn" id="comments">
-  		<span class="iconfont">0</span>
-  		Comments
-  	</a>
-  	<a class="share-btn" target="blank" href="http://service.weibo.com/share/share.php?url={{ page.url | prepend: site.url }}&appkey=&title={{ page.title | cgi_escape }}&pic={{ page.cover }}&language=zh_cn">
-  		<span class="iconfont">&#xe91d;</span>
-  		Share
-  	</a>
-  </p>
+    <!-- Comments and Share -->
+    <p class="share">
+        <a class="share-btn" id="comments">
+            <span class="disqus-comment-count iconfont" data-disqus-identifier="{{ page.url | prepend: site.baseurl | prepend: site.url }}">0</span> {{site.data.i18n[page.lang].comments}}
+        </a>
+        <a class="share-btn" target="blank" href="http://service.weibo.com/share/share.php?url={{ page.url | prepend: site.baseurl | prepend: site.url }}&appkey=&title={{ page.title | cgi_escape }}&pic={{ page.cover }}&language=zh_cn">
+            <span class="iconfont">&#xe91d;</span> {{site.data.i18n[page.lang].share}}
+        </a>
+    </p>
 </div>
 
+<!-- Disqus comments -->
 <div id="disqus_thread"></div>
 <script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'hectorguo'; // required: replace example with your forum shortname
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+// var disqus_shortname = 'hectorguo'; // required: replace example with your forum shortname
 
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-    	var dsqBtn = document.getElementById('comments'),
-    		dsqDom = document.getElementById('disqus_thread');
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() {
+    var dsqBtn = document.getElementById('comments'),
+        dsqDom = document.getElementById('disqus_thread');
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//{{site.comments.short_name}}.disqus.com/embed.js';
 
-        dsqBtn.addEventListener('click',function(){
-        	!dsqDom.childElementCount && (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        });
+    dsqBtn.addEventListener('click', function() {
+        !dsqDom.childElementCount && (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    });
 
-      // wrap table element
-      var tableDom = document.querySelectorAll('table');
-      if(tableDom.length) {
+    // wrap table element
+    var tableDom = document.querySelectorAll('table');
+    if (tableDom.length) {
         for (var i = tableDom.length - 1; i >= 0; i--) {
-          tableDom[i].outerHTML = '<div class="tb-container">'+tableDom[i].outerHTML+'</div>';
+            tableDom[i].outerHTML = '<div class="tb-container">' + tableDom[i].outerHTML + '</div>';
         };
-      }
-    })();
+    }
+})();
 </script>
+<script id="dsq-count-scr" src="//{{site.comments.short_name}}.disqus.com/count.js" async></script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+<!-- MathJax -->
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>

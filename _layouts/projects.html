@@ -3,8 +3,8 @@ layout: default
 ---
 <div class="post">
 <h1>{{site.data.i18n[page.lang].app}}</h1>
-{% for project in page.projects.app %}
 
+{% for project in page.projects.app %}
 <div class="item">
   <img src="{{project.img}}" alt="{{project.name}}" class="thumbnail">
   <div class="des">
@@ -29,26 +29,6 @@ layout: default
     {% if project.steam %}
       <a href="{{project.steam}}"><span class="iconfont">&#xe924;</span> View on Steam</a>
     {% endif %}
-<!--     <ul class="inline-list">
-    {% if project.link %}
-      <li><a href="{{project.link}}"><span class="iconfont"></span> Project Page</a></li>
-    {% endif %}
-    {% if project.github %}
-      <li><a href="{{project.github}}"><span class="iconfont">&#xe735;</span> View on Github</a></li>
-    {% endif %}
-    {% if project.chrome %}
-      <li><a href="{{project.chrome}}"><span class="iconfont"></span> View on Chrome Store</a></li>
-    {% endif %}
-    {% if project.ios %}
-      <li><a href="{{project.ios}}"><span class="iconfont"></span> View on App Store</a></li>
-    {% endif %}
-    {% if project.android %}
-      <li><a href="{{project.android}}"><span class="iconfont"></span> View on Google Play</a></li>
-    {% endif %}
-    {% if project.steam %}
-      <li><a href="{{project.steam}}"><span class="iconfont"></span> View on Steam</a></li>
-    {% endif %}
-    </ul> -->
   </div>
   <!-- add a link filling the container-->
     {% if project.link %}
@@ -70,7 +50,6 @@ layout: default
       <a href="{{project.steam}}" class="item-link"></a>
     {% endif %}
 </div>
-
 {% endfor %}
 
 <hr>

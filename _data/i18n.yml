@@ -12,6 +12,8 @@ en:
   app: "Apps"
   design: "Designs"
   readmore: "Read More"
+  comments: "Comments"
+  share: "Share"
 zh:
   header:
     home:
@@ -26,3 +28,5 @@ zh:
   app: "应用"
   design: "设计"
   readmore: "阅读此文"
+  comments: "评论"
+  share: "分享"
