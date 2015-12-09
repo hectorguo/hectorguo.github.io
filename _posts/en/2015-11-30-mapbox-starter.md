@@ -70,7 +70,7 @@ Data format is `GeoJSON`, you can modify and add other universities on it if you
     </nav>
 </div>
 <script src="https://api.tiles.mapbox.com/mapbox.js/v2.2.3/mapbox.js"></script>
-<script src="/Universities-in-US/app.min.js"></script>
+<script src="/Universities-in-US/app.blog.min.js"></script>
 
 ## Data Categories
 
