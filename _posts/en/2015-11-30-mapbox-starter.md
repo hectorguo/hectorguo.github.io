@@ -8,7 +8,9 @@ published: True
 
 Using Mapbox to visualize the distribution of universities in United States, the data is from Linkedin University Rankings and offical admission sites of universities.
 
-Data format is `GeoJSON`, you can modify and add other universities on it if you want. Welcome to fork it on [Github](https://github.com/hectorguo/Universities-in-US/)!
+Data format is `GeoJSON`, you can modify and add other universities on it if you want. 
+
+Welcome to fork it on [Github](https://github.com/hectorguo/Universities-in-US/)!
 
 <link href="https://api.tiles.mapbox.com/mapbox.js/v2.2.3/mapbox.css" rel="stylesheet">
 <link rel="stylesheet" href="/Universities-in-US/style.min.css">
