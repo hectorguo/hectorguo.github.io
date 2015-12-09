@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Use iPhone to build a Remote Game Controller just like Wii
+title: Use iPhone to build a Wiimote-style Controller
 categories: ['en']
 tags: ['HTML5','NodeJS','Front-end']
 published: True
