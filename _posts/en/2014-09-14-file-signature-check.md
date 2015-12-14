@@ -146,7 +146,7 @@ For instance, the signatures of files that Microsoft Office create (`.xlsx`,`.do
 Test:
 
 | File Type     |  Successfully Intercepted |
-| :-------- | --------:|
+| :-------- | :--------|
 | mp4 to pdf   | ✅ |
 | zip to docx  | ✅ |
 | zip to jpg   | ✅ |
