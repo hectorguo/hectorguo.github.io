@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How To Detect File Type Through HTML5"
+title: "How to detect File Type through HTML5"
 published: true
 category: en
 tags: ['HTML5','Front-end']
@@ -11,9 +11,9 @@ Generally, a file's type is identified by server side to check if this file is l
 
 However, only detecting the expanded-name is not enough, some of users can change the file expanded-name to avoid this detection. Therefore, we have to find a solution to address this unsafe issue.
 
-## Could a file's content have changed after modifying its expanded-name ?
+## Could a file's content can be modified ?
 
-Of course not. We can do an experiment. When we try to play a video file with a `.pdf` extension, it can still play well. In other words, the video player has another method to detect whether it is a video file or not. After searching on Google, I found that every file has a [`File Signature` (or `magic number`)](http://www.garykessler.net/library/file_sigs.html), which represents for the **real** type of a file. Fortunately, it is constantly embedded in the header of a file (first 4~8 bytes).
+If we just modify the file's expanded-name, the file's content won't be changed. We can do an experiment. When we try to play a video file with a `.pdf` extension, it can still play well. In other words, the video player has another method to detect whether it is a video file or not. After searching on Google, I found that every file has a [File Signature (or Magic Number)](http://www.garykessler.net/library/file_sigs.html), which represents for the **real** type of a file. Fortunately, it is constantly embedded in the header of a file (first 4~8 bytes).
 
 However, most solutions provided online are implementation on server side. It is not a good way to use. Only the file that has been uploaded to the server can be detected. A large file has to be waited for a long time to upload, which might make users mad. Therefore, I intended to find a front-end solution.
 
@@ -145,17 +145,17 @@ For instance, the signatures of files that Microsoft Office create (`.xlsx`,`.do
 
 Test:
 
-| File Type     |  Successfully Intercept |
+| File Type     |  Successfully Intercepted |
 | :-------- | --------:|
-| mp4 to pdf   | ✔️ |
-| zip to docx  | ✔️ |
-| zip to jpg   | ✔️ |
-| docx to zip  | ⤬ |
-| docx to xlsx | ⤬ |
+| mp4 to pdf   | ✅ |
+| zip to docx  | ✅ |
+| zip to jpg   | ✅ |
+| docx to zip  | ❌ |
+| docx to xlsx | ❌ |
 
 ### 2. Compatibility
 
-Unfortunately, `HTML5`'s `FileReader` is not supported by all browsers.
+Unfortunately, HTML5's `FileReader` is not supported by all browsers.
 
 | Feature   | Firefox (Gecko) | Chrome | Internet Explorer* | Opera* | Safari |
 | :-------- | :-------------- | :----- | :----------------- | :----- | :----- |
@@ -164,7 +164,7 @@ Unfortunately, `HTML5`'s `FileReader` is not supported by all browsers.
 
 ### 3. File Signature Library
 
-The library of file signatures can be found on[File Signature Database](www.filesignatures.net), but not all the files has a signature on it, even though this website keeps updating them.
+The library of file signatures can be found on [File Signature Database](www.filesignatures.net), but not all the files has a signature on it, even though this website keeps updating them.
 
 ## Reference
 
