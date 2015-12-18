@@ -9,8 +9,16 @@ published: True
 
 This is an iOS app to help people make a decision - just shake your phone and will get a random result. It is based on [Google Polymer](https://www.polymer-project.org) and [Cordova](https://cordova.apache.org/), which can support most of mobile platforms. It is under development.
 
-## Prototype
+## Demo
 
+![](http://ww3.sinaimg.cn/large/6d0af205jw1ez49ascxw7j20fm0rsq48.jpg)
 
-## In Progress
+![](http://ww1.sinaimg.cn/large/6d0af205jw1ez491jpcwwg208w0fsn9f.gif)
+
+Scan the QR code below, experience Beta Version.
+
+![](http://ww1.sinaimg.cn/large/6d0af205jw1ez499ujn07j20ms0ms0tl.jpg)
+
+iOS and Android App are coming!
+
 
