@@ -87,7 +87,9 @@ projects:
   -
     name: "红包设计"
     date: "2015.10"
+    img: "http://ww1.sinaimg.cn/small/6d0af205jw1eyckb26bxdj20az07hdgy.jpg"
     des: "为班长结婚特别设计的红包"
+    link: "/en/red-package/"
   -
     name: "可视化"
     date: "Dec 2015"
