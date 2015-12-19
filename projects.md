@@ -5,11 +5,19 @@ permalink: /zh/projects/
 projects: 
   app:
   -
+    name: "分歧终结机 (内测中)"
+    date: "2015.11"
+    des: "手机摇一摇，帮你做决定"
+    img: "http://ww1.sinaimg.cn/small/6d0af205jw1eyzks2peejj20sg0sgjtn.jpg"
+    link: "/en/ios-app-random/"
+    ios:
+    based: "Google Polymer, Cordova"
+  -
     name: "FillTime (开发中)"
     date: "2015.08"
-    des: "拖延症患者福音，记录每日时间分配，看看哪些时间是因为拖延浪费掉的，帮助自己更有效率的做事。"
-    based: "Swift"
-    link:
+    des: "拖延症患者福音，记录每日时间分配，帮助自己更有效率的做事。"
+    based: "Swift, Unity2D"
+    link: "/en/ios-app-filltime/"
     ios:
   -
     name: "求生之路2关卡：工大校园 (开发中)"
@@ -17,7 +25,7 @@ projects:
     img: "http://ww3.sinaimg.cn/large/6d0af205jw1ev4gtxg2b0j2093093q4r.jpg"
     des: "情怀作品，重现工大校区，体验在自己的校园里打僵尸"
     based: "Hammer Editor"
-    link: 
+    link: "/en/l4d2/"
     steam:
   -
     name: "GRE单词本"
@@ -80,6 +88,12 @@ projects:
     name: "红包设计"
     date: "2015.10"
     des: "为班长结婚特别设计的红包"
+  -
+    name: "可视化"
+    date: "Dec 2015"
+    des: "美国Top大学分布"
+    img: "http://ww2.sinaimg.cn/large/6d0af205jw1eymyl7jw85j205k0463yh.jpg"
+    link: "/en/mapbox-starter/"
 ---
 
 二维码定位，公交换乘查询 － js，html

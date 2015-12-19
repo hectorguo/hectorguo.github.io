@@ -22,9 +22,11 @@ The address bar will automatically hide if you don't hover on the top.
 This is a state when address bar is open as below.
 ![](http://ww2.sinaimg.cn/large/6d0af205jw1ew71dw3c5uj20s903z3zt.jpg)
 
+![](http://ww3.sinaimg.cn/large/6d0af205jw1ez4tqv7fq0g20zk03wtfd.gif)
+
 By doing this, users can just focus on the content and switch tabs more easily in this mode than in the inconvenient fullscreen mode. After testing on a few devices, I found that it was very appropriate for small screen devices such as laptops.
 
-Coincidentally, there was a [design contest](http://bbs.maxthon.cn/forum.php?mod=viewthread&tid=538280) for Maxthon Browser Skins, so I participated in this contest with two types of skins and got a fashion T-shirt for a reward. :)
+Coincidentally, there was a [design contest](http://old-bbs.maxthon.cn/thread-538576-1-1.html) for Maxthon Browser Skins, so I participated in this contest with two types of skins and got a fashion T-shirt for a reward. :)
 
 ### Entries
 
