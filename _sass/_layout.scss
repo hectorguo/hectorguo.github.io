@@ -31,11 +31,15 @@
         height: 2px;
         background-color: $grey-color-dark;
         transform: scaleX(0);
+        -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
         transition: all .15s;
     }
 
     &:hover::before, &:focus::before {
         transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
     }
 
     // prevent text wrap
@@ -46,6 +50,8 @@
 
 .active::before {
     transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
 }
 
 .site-nav {
