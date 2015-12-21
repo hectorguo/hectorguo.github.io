@@ -12,4 +12,4 @@ permalink: /zh/about/
 Web前端开发，Web界面设计，iOS，游戏Mod
 编程不是为了写代码而编程，是为了解决问题而编程
 
-更多个人信息请查看 [个人简历](/zh/resume/)
+更多个人信息请查看 [Linkedin](https://www.linkedin.com/in/hectorguo)
