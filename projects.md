@@ -27,7 +27,14 @@ projects:
     link: "/en/ios-app-filltime/"
     ios:
   -
-    name: "求生之路2关卡：工大校园 (开发中)"
+    name: "iPhone体感控制器"
+    date: "2015.09"
+    img: "http://ww3.sinaimg.cn/large/6d0af205jw1eygh28998ej20c00c0ab0.jpg"
+    des: "基于浏览器的体感控制游戏，甩动iPhone控制方向"
+    link: "/en/iphone-game-controler/"
+    based: "Javascript, NodeJS, Socket.io"
+  -
+    name: "求生之路2关卡：工大校园"
     date: "2015.08"
     img: "http://ww3.sinaimg.cn/large/6d0af205jw1ev4gtxg2b0j2093093q4r.jpg"
     des: "情怀作品，重现工大校区，体验在自己的校园里打僵尸"
