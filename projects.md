@@ -5,6 +5,13 @@ permalink: /zh/projects/
 projects: 
   app:
   -
+    name: "JSON简历生成器"
+    date: "2015.12"
+    des: "编辑Json生成响应式Web简历，自制主题"
+    img: "http://ww4.sinaimg.cn/large/6d0af205jw1ez8wpraiw5j20b40b474c.jpg"
+    github: "https://github.com/hectorguo/jsonresume-theme-material"
+    based: "jsonresume, NodeJS"
+  -
     name: "分歧终结机 (内测中)"
     date: "2015.11"
     des: "手机摇一摇，帮你做决定"
