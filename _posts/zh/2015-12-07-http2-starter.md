@@ -118,6 +118,34 @@ https.createServer(options, function(request, response) {
 
 ![](http://ww4.sinaimg.cn/large/6d0af205jw1eys3nxjhxgj20ob07j766.jpg)
 
+
+2015-12-25 更新：
+
+另外注意一点，如果你是从http转向https，需要在服务端/客户端做个[重定向](http://stackoverflow.com/questions/22453782/nodejs-http-and-https-over-same-port/23975955#23975955)，保证用户访问的站点是https而不是http。
+
+{% highlight javascript %}
+// Redirect from http port 80 to https
+var http = require('http');
+http.createServer(function (req, res) {
+    res.writeHead(301, { "Location": "https://" + req.headers['host'] + req.url });
+    res.end();
+}).listen(80);
+{% endhighlight %}
+
+或者在页面端：
+
+{% highlight javascript %}
+var host = "YOURDOMAIN.github.io";
+if ((host == window.location.host) && (window.location.protocol != "https:"))
+    window.location.protocol = "https";
+{% endhighlight %}
+
+而且一旦搭建了https，页面内部所有的外部资源都必须实施https，否则会浏览器阻拦：
+
+```
+Mixed Content: The page at 'https://localhost:8080/index.html' was loaded over HTTPS, but requested an insecure script 'http://hectorguo.com/Universities-in-US/app.min.js'. This request has been blocked; the content must be served over HTTPS.
+```
+
 ### 如何使用 PUSH ？
 
 PUSH 是 HTTP/2 的新方法，虽然可以让服务端预先推送资源给客户端，但并不是说只要使用该方法性能就会提升，有时反而会下降。目前官方还未公布最佳实践方法，因此并不建议在生产环境中运用，但可以在开发环境下体验。
