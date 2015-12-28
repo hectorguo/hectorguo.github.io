@@ -62,6 +62,9 @@ script.src = "http://www.someWebApiServer.com/some-data";
 script = document.createElement("script");
 script.type = "text/javascript";
 script.src = "http://www.someWebApiServer.com/some-data?callback=my_callback";
+function my_callback(data) {
+   // `data` is now the object representation of the JSON data
+}
   {% endhighlight %}
 
   注意到了吗，我们添加了一个 my_callback 函数。因此，当服务器接受到你的请求时，会找到该callback参数，并相应生成下面的形式：
