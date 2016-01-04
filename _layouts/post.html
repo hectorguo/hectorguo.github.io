@@ -7,7 +7,7 @@ layout: default
         <h1 class="post-title">{{ page.title }}</h1>
         <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %} {% for tag in page.tags %}
             <code class="post-meta tags"> 
-        <a href="{{ site.baseurl }}/{{ page.lang }}/tags/#{{ tag }}">{{ tag }}</a>
+        <a href="{{ site.url }}/{{ page.lang }}/tags/#{{ tag }}">{{ tag }}</a>
       </code> {% endfor %}
         </p>
     </header>
@@ -33,9 +33,9 @@ layout: default
     <!-- Comments and Share -->
     <p class="share">
         <a class="share-btn" id="comments">
-            <span class="disqus-comment-count iconfont" data-disqus-url="{{ page.url | prepend: site.baseurl | prepend: site.url }}">0</span> {{site.data.i18n[page.lang].comments}}
+            <span class="disqus-comment-count iconfont" data-disqus-url="{{ page.url | prepend: site.url }}">0</span> {{site.data.i18n[page.lang].comments}}
         </a>
-        <a class="share-btn" target="blank" href="http://service.weibo.com/share/share.php?url={{ page.url | prepend: site.baseurl | prepend: site.url }}&appkey=&title={{ page.title | cgi_escape }}&pic={{ page.cover }}&language=zh_cn">
+        <a class="share-btn" target="blank" href="http://service.weibo.com/share/share.php?url={{ page.url | prepend: site.url }}&appkey=&title={{ page.title | cgi_escape }}&pic={{ page.cover }}&language=zh_cn">
             <span class="iconfont">&#xe91d;</span> {{site.data.i18n[page.lang].share}}
         </a>
     </p>

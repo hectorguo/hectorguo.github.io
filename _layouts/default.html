@@ -9,11 +9,11 @@
     <meta name="baidu-site-verification" content="PFrWTDMoEY" />
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description[page.lang] }}{% endif %}">
-    <link rel="shortcut icon" href="/img/favicon.ico" /> {% assign posts=site.posts | where:"date", page.date %} {% for post in posts %} {% if post.lang != page.lang %}
+    <link rel="shortcut icon" href="{{site.url}}/img/favicon.ico" /> {% assign posts=site.posts | where:"date", page.date %} {% for post in posts %} {% if post.lang != page.lang %}
     <link rel="alternate" hreflang="{{post.lang}}" href="{{post.url}}" /> {% endif %} {% endfor %}
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ " /feed.xml " | prepend: site.baseurl | prepend: site.url }}" />
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.url }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.url }}" />
 </head>
 
 <body>

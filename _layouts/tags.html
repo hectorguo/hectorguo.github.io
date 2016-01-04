@@ -25,7 +25,7 @@ site.tags['tag1']: [{post.title:'xxx',post.lang:'zh'}, {post.title:'xx2',post.la
         {% assign posts = site.tags[tag_name] | where:'lang', page.lang %}
         {% for post in posts %}
         <li>
-          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><span class="post-meta">  {{post.date | date: "%F"}}</span>
+          <a href="{{ post.url | prepend: site.url }}">{{ post.title }}</a><span class="post-meta">  {{post.date | date: "%F"}}</span>
         </li>
         {% endfor %}
     </ul>

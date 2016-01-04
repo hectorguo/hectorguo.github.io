@@ -9,19 +9,19 @@ layout: default
           <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
           <h2>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
           </h2>
-            {% if post.cover %}<p><a class="post-link cover" href="{{ post.url | prepend: site.baseurl }}" style="background-image:url({{post.cover}})"><img src="{{post.cover}}" alt=""></a></p>{% endif %}
+            {% if post.cover %}<p><a class="post-link cover" href="{{ post.url }}" style="background-image:url({{post.cover}})"><img src="{{post.cover}}" alt=""></a></p>{% endif %}
           <p>
             {{ post.content | markdownify | strip_html | truncate: 300 }}
-            <a href="{{ post.url | prepend: site.baseurl }}">{{site.data.i18n[page.lang].readmore}}</a>
+            <a href="{{ post.url }}">{{site.data.i18n[page.lang].readmore}}</a>
           </p>
           <hr>
         </li>
       {% endif %}
     {% endfor %}
   </ol>
-  <p class="share"><a class="share-btn" href="{% if page.lang == "en" %}{{ "/en/feed.xml" | prepend: site.baseurl }}{% else %}{{ "/feed.xml" | prepend: site.baseurl }}{% endif %}">
+  <p class="share"><a class="share-btn" href="{% if page.lang == "en" %}{{ "/en/feed.xml"}}{% else %}{{ "/feed.xml"}}{% endif %}">
   <span class="iconfont">&#xe923;</span>
   RSS</a></p>
 
