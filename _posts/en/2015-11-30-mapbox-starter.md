@@ -71,8 +71,6 @@ Welcome to fork it on [Github](https://github.com/hectorguo/Universities-in-US/)
         </ul>
     </nav>
 </div>
-<script src="https://api.tiles.mapbox.com/mapbox.js/v2.2.3/mapbox.js"></script>
-<script src="/Universities-in-US/app.blog.min.js"></script>
 
 ## Data Categories
 
@@ -80,3 +78,6 @@ Welcome to fork it on [Github](https://github.com/hectorguo/Universities-in-US/)
 2. [Best graduate universities for software developers](http://www.linkedin.com/edu/rankings/us/graduate-software-engineering?trk=edu-rankings-flt-ctg-dd)
 3. [Best graduate universities for designers](http://www.linkedin.com/edu/rankings/us/graduate-design?trk=edu-rankings-flt-ctg-dd)
 4. TOEFL minimum requirement
+
+<script src="https://api.tiles.mapbox.com/mapbox.js/v2.2.3/mapbox.js"></script>
+<script src="https://hectorguo.com/Universities-in-US/app.blog.min.js"></script>
