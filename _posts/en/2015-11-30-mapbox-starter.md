@@ -80,4 +80,4 @@ Welcome to fork it on [Github](https://github.com/hectorguo/Universities-in-US/)
 4. TOEFL minimum requirement
 
 <script src="https://api.tiles.mapbox.com/mapbox.js/v2.2.3/mapbox.js"></script>
-<script src="https://hectorguo.com/Universities-in-US/app.blog.min.js"></script>
+<script src="//hectorguo.com/Universities-in-US/app.blog.min.js"></script>
