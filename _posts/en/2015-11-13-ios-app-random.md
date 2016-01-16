@@ -17,7 +17,7 @@ This is a mobile app to help people make a decision - just shake your phone and 
 
 Scan the QR code below, experience Beta Version.
 
-![](http://ww3.sinaimg.cn/large/6d0af205gw1f01m162x2nj20ga0g4q4l.jpg)
+![](http://ww3.sinaimg.cn/small/6d0af205gw1f01m162x2nj20ga0g4q4l.jpg)
 
 iOS and Android version are coming!
 
