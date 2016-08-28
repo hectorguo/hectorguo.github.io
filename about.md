@@ -1,15 +1,15 @@
 ---
 layout: page
-title: 关于
-permalink: /zh/about/
+title: About
+category: en
+type: page
 ---
-欢迎访问海旭的个人主页！
+Welcome to my personal website!
 
-本站基于 [Jekyll](http://jekyllrb.com/) 和 [Github Pages](https://pages.github.com/), 页面经过重新设计和改造，兼容移动平台，支持多语言。如果觉得还不错，欢迎在 [Github](https://github.com/hectorguo/hectorguo.github.io) fork使用（博文内容请勿复制）。
+This site is powered by [Jekyll](http://jekyllrb.com/) and [Github Pages](https://pages.github.com/), redesigned by Hector Guo. Of course, it is open source. If you like this theme, welcome to fork it on [Github](https://github.com/hectorguo/hectorguo.github.io).
 
-### 郭海旭
+### Haixu (Hector) Guo
 
-Web前端开发，Web界面设计，iOS，游戏Mod
-编程不是为了写代码而编程，是为了解决问题而编程
+I am a web developer, dedicated to front-end developments and web design, also familiar with requirement analysis and project management, ever worked as a Business Analyst for ERP products and a Web Developer for front-end framework.
 
-更多个人信息请查看 [Linkedin](https://www.linkedin.com/in/hectorguo)
+For more infomation about me, please visit [Linkedin](https://www.linkedin.com/in/hectorguo).

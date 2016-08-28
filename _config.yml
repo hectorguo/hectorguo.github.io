@@ -37,7 +37,7 @@ author:
   en: "Hector Guo"
 description: 
   zh: "Web前端开发者，致力于分享各类见闻，喜欢将国外优秀文章以自己理解的方式分享出来，填充中文技术库"
-  en: "A front-end developer, happy to share all the new ideas and methods about Web Development, Web Design and IT Management."
+  en: "A front-end web developer, happy to share all the new ideas and methods about Web Development, Web Design and IT Management."
 contacts:
   zh:
   -
@@ -79,9 +79,9 @@ defaults:
     scope:
       path: ""
     values:
-      lang: zh
+      lang: en
   -
     scope:
-      path: _posts/en
+      path: _posts/zh
     values:
-      lang: en
+      lang: zh
