@@ -12,14 +12,14 @@
 
     <nav class="site-nav">
       <div class="trigger">
-        {% if page.lang == "zh" %}
+        {% if page.lang == "en" %}
           {% if page.title %}
-          <a href="{{ page.url | replace:'zh/','en/' }}" class="lang">EN</a>
+          <a href="{{ page.url | replace:'en/','zh/' }}" class="lang">中文</a>
           {% else %}
-          <a href="/en/index/" class="lang">EN</a>
+          <a href="/zh/index/" class="lang">中文</a>
           {% endif %}
         {% else %}
-        <a href="{{ page.url | replace:'en/','zh/' }}" class="lang">中文</a>
+        <a href="{{ page.url | replace:'zh/','en/' }}" class="lang">EN</a>
         {% endif %}
       </div>
     </nav>
