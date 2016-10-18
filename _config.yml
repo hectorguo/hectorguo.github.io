@@ -37,7 +37,7 @@ author:
   en: "Hector Guo"
 description: 
   zh: "Web前端开发者，致力于分享各类见闻，喜欢将国外优秀文章以自己理解的方式分享出来，填充中文技术库"
-  en: "A front-end web developer, happy to share all the new ideas and methods about Web Development, Web Design and IT Management."
+  en: "A web front-end engineer, happy to share all the new ideas and methods about Web Development, Web Design and IT Management."
 contacts:
   zh:
   -
@@ -57,10 +57,6 @@ contacts:
     url: "https://www.linkedin.com/in/hectorguo"
     icon: "&#xe929;"
   en:
-  -
-    name: "Twitter"
-    url: "https://twitter.com/hectorguo"
-    icon: "&#xe922;"
   -
     name: "Github"
     url: "https://github.com/hectorguo"
