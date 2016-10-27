@@ -4,7 +4,7 @@ title: 加州俩月碎碎念
 categories: ['zh']
 tags: ['杂谈']
 published: True
-cover: ''
+cover: 'http://ww4.sinaimg.cn/large/6d0af205gw1f96xg7qyp6j21kw0fd7gp.jpg'
 ---
 
 来加州两个多月，家当基本安置完毕，把最近的见闻分享一下。
