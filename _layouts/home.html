@@ -63,10 +63,7 @@
 
     // adapt for mobile devices
     if(window.innerWidth < 768) {
-      S.init('#cover', '#countdown 3');
-      setTimeout(function(){
-        S.UI.simulate('Hi|I am|Hector|I rock|JS');
-      }, 5000);
+      S.init('#cover', 'Hi|I am|Hector|I Rock|JS');
     } else {
       S.init('#cover', 'Welcome|To My Site|I am|Hector|I rock|JS');
     }
