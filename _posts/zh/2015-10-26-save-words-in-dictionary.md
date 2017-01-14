@@ -32,19 +32,61 @@ OS X还有一个自带的工作流制作器Automator，真的是人性化的工�
 ![](http://ww4.sinaimg.cn/large/6d0af205jw1exey5a1o61j20h80as407.jpg)
 
 就此服务就完成啦，保存即可。你可以创建两个服务，一个保存英文释义，一个保存中文释义。
+
 ![](http://ww3.sinaimg.cn/large/6d0af205jw1exey6xcyggj209608qmxy.jpg)
 
 
 ### 4. 绑定快捷键
 上述步骤完成后，你就可以直接在服务中看到你自定义的工作流。
 如果你想方便快捷的保存单词，则直接在`系统偏好设置>键盘>快捷键`中找到对应的服务，自定义快捷键即可。
+
 ![](http://ww4.sinaimg.cn/large/6d0af205jw1exey5r4phzj20hs0afq5d.jpg)
 
 看下最终成果吧。
+
 ![](http://ww2.sinaimg.cn/large/6d0af205jw1exey7a3f5bj20h50a3q8o.jpg)
 
 如果你想好看一点，当然可以利用正则表达式，把文本格式化一下，接着保存到Evernote中，就可以随身携带背诵啦。
+
 ![](http://ww2.sinaimg.cn/large/6d0af205jw1exey7qp096j20io0j1dm8.jpg)
 
 最后附上做好的工作流，方便各位导入。
 [网盘下载](http://pan.baidu.com/s/1bn7a8n9) 
+
+## 2017.01.14 更新：
+很多人来问如何用正则表达式来格式化数据。在此分享下新的Shell脚本，可以直接输出格式化后的`.html`文件，用浏览器打开即可看。
+
+将第3步的Shell脚本替换为如下即可。
+
+{% highlight bash %}
+  # 将单词释义保存到桌面的wordlist.html文件下，若文件不存在，则初始化文件（填充html的标签）
+  FILE=$HOME/Desktop/wordlist.html
+  INIT_STRING='<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>MAC-Wordlist</title></head><body><table></table></body></html>'
+  # 格式化单词释义（把单词，音标，解释分离开）
+  RESULT=$(echo -e $1 | sed -E 's#([a-zA-Z]+) (\|[^\|]+\|)(.*)#<tr><td>\1</td><td>\2</td><td>\3</td></tr>#g')
+  if [ ! -f $FILE ]; then
+  echo $INIT_STRING > $FILE
+  fi
+  sed -Ei '' "s#(</table>)#$RESULT\1#g" $FILE
+{% endhighlight %}
+
+最终截图如下：
+
+![](http://ww3.sinaimg.cn/large/6d0af205gw1fbqs0hz1p3j20wd0ca135.jpg)
+
+顺便分享下Shell脚本的小坑，使用`sed`来用正则表达式替换字符串时，如果替换的字符串里还有`/`等特殊字符（与正则表达式冲突）导致无法替换时，可将命令行里的`/`用`#`或`@`等其他特殊字符代替即可。
+
+如
+
+{% highlight bash %}
+  RESULT="<td>test</td>"
+  sed -Ei '' "s/(<\/table>)/$RESULT\1/g" $FILE
+{% endhighlight %}
+
+上述会报错，因为`RESULT`变量里的`</td>`中的`/`与`sed`里用的`/`冲突了。
+可改为：
+
+{% highlight bash %}
+  RESULT="<td>test</td>"
+  sed -Ei '' "s#(</table>)#$RESULT\1#g" $FILE
+{% endhighlight %}
