@@ -25,7 +25,7 @@ published: True
 
 字体图标方案提出的本意是为了解决切图带来的不便，以及对高清设备显示模糊现象的问题。 
 
-![](http://ww3.sinaimg.cn/large/6d0af205jw1exy1362sdwj20fc05amxw.jpg)
+![](https://ww3.sinaimg.cn/large/6d0af205jw1exy1362sdwj20fc05amxw.jpg)
 
 因此引用了矢量图标，并采用类似`<icon class="icon-user"></icon>`的方式方便引用。
 但后来发现该方案在一些复杂图标的显示上并不是那么好，原因是因为不同浏览器对字体的渲染方式不同，抗锯齿的效果欠佳，详细的可见[这篇文章的说明](http://isux.tencent.com/svg-icon-part-one.html)。
@@ -250,7 +250,7 @@ published: True
 
 综上所述，没能找到一个最佳的svg方案，之前采用方案4，但发现引用起来并没有字体图标方案来的简单，为了引用一个图标，着实添加了不少代码量，而且由于是在html中引用，如果在不同的路径下统一用相对路径的话（尤其针对Jekyll这类静态博客系统），会带来不少问题，采用绝对路径那引用起来更加麻烦。 且根据[这篇文章](http://blog.pictonic.co/post/32869817328/svgs-are-cool-but-icon-fonts-are-just-10-of)，当随着图标的增多，svg的文件大小显然要高于字体。
 
-![](http://ww4.sinaimg.cn/large/6d0af205jw1exy7twbzmzj20dw08kmxj.jpg)
+![](https://ww4.sinaimg.cn/large/6d0af205jw1exy7twbzmzj20dw08kmxj.jpg)
 
 因此，后来又改回了字体图标方案。当然，如果你的图标不多，又恰好想新增几个图标上去，显然用svg直接放进html里会更方便，也省去了重新合并字体的麻烦。
 如果各位有什么其他更好的方案，欢迎在下面评论探讨。

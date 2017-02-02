@@ -4,7 +4,7 @@ title: "How to detect File Type through HTML5"
 published: true
 category: en
 tags: ['HTML5','Front-end']
-cover: "http://ww4.sinaimg.cn/large/6d0af205jw1evtw72ji9pj20hs0aoq4b.jpg"
+cover: "https://ww4.sinaimg.cn/large/6d0af205jw1evtw72ji9pj20hs0aoq4b.jpg"
 ---
 
 Generally, a file's type is identified by server side to check if this file is legal for storing. For instance, a cloud document editor can only allow users to import `.doc`/`.docx`/`.pages` files.

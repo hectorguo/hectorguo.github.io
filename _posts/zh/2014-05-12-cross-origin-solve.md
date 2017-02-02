@@ -3,7 +3,7 @@ layout: post
 title: 前端跨域问题解决方法集锦
 category: zh
 tags: 前端开发
-cover: "http://ww1.sinaimg.cn/large/6d0af205jw1evtwc2w59zj20mt08sgq8.jpg"
+cover: "https://ww1.sinaimg.cn/large/6d0af205jw1evtwc2w59zj20mt08sgq8.jpg"
 ---
 
 近期遇到一些前台请求跨域问题，发现现在方案又多了一些新的，因此整理一下，希望有用。
@@ -146,7 +146,7 @@ my_callback({['some string 1', 'some data', 'whatever data']});
   
   在此推荐个 [小插件](https://chrome.google.com/webstore/detail/nlfbmbojpeacfghkpbjhddihlkkiljbi)，该插件原理是利用chrome内部API([chrome.webRequest](https://developer.chrome.com/extensions/webRequest))，更改http请求与返回的头信息，让服务器强制允许`Access-Control-Allow-Origin:*`,并更改当前源。
 
-  ![](http://ww1.sinaimg.cn/large/6d0af205jw1eyc56pvnnij20hr0adjt2.jpg)
+  ![](https://ww1.sinaimg.cn/large/6d0af205jw1eyc56pvnnij20hr0adjt2.jpg)
 
 ### 小结
 
@@ -165,7 +165,7 @@ my_callback({['some string 1', 'some data', 'whatever data']});
 
 有时，我们在本地运行页面时，也会遇到across origin error的情况。
 
-![](http://ww2.sinaimg.cn/large/6d0af205jw1eycfskoc5pj20so01awey.jpg)
+![](https://ww2.sinaimg.cn/large/6d0af205jw1eycfskoc5pj20so01awey.jpg)
 
 这个是因为浏览器的限制。 目前chrome、firfox、opera都出现了这种情况，因为有安全沙箱，它们认为加载本地其它文件为跨域访问（但是使用IE8就不会出现这种错误）。
 为了解决该问题，解决方法有两种：
@@ -173,7 +173,7 @@ my_callback({['some string 1', 'some data', 'whatever data']});
 1. **设置Chrome启动参数**
     在启动Chrome时，添加一个参数：**--allow-file-access-from-files**
     
-    ![](http://ww1.sinaimg.cn/large/6d0af205jw1eycfumns6pj20ab0avjsk.jpg)
+    ![](https://ww1.sinaimg.cn/large/6d0af205jw1eycfumns6pj20ab0avjsk.jpg)
 
     每次启动Chrome都使用该快捷方式，即可解决本地跨域问题
 2. **启动Apache设置虚拟主机**

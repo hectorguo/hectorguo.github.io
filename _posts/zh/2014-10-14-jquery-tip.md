@@ -4,7 +4,7 @@ title: "Jquery Tips(1)"
 published: true
 category: zh
 tags: ['Javascript','前端开发']
-cover: "http://ww3.sinaimg.cn/large/6d0af205jw1evtw5awxj0j20je0800t5.jpg"
+cover: "https://ww3.sinaimg.cn/large/6d0af205jw1evtw5awxj0j20je0800t5.jpg"
 ---
 本篇主要讲解jquery中一些方法的性能及注意事项，全是项目中遇到的问题总结，怕以后会忘记，遂在此记录一下。
 

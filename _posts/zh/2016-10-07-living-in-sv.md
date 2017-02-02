@@ -4,7 +4,7 @@ title: 加州俩月碎碎念
 categories: ['zh']
 tags: ['杂谈']
 published: True
-cover: 'http://ww1.sinaimg.cn/large/6d0af205gw1f96vvygiyjj21kw0dfn77.jpg'
+cover: 'https://ww1.sinaimg.cn/large/6d0af205gw1f96vvygiyjj21kw0dfn77.jpg'
 ---
 
 来加州两个多月，家当基本安置完毕，把最近的见闻分享一下。
@@ -15,15 +15,15 @@ cover: 'http://ww1.sinaimg.cn/large/6d0af205gw1f96vvygiyjj21kw0dfn77.jpg'
 
 ### 住房都是这样的
 
-![house1](http://ww3.sinaimg.cn/large/6d0af205gw1f96vosch2qj21kw16onlz.jpg)
+![house1](https://ww3.sinaimg.cn/large/6d0af205gw1f96vosch2qj21kw16onlz.jpg)
 
-![house2](http://ww1.sinaimg.cn/large/6d0af205gw1f96vp35mapj21kw16oqmr.jpg)
+![house2](https://ww1.sinaimg.cn/large/6d0af205gw1f96vp35mapj21kw16oqmr.jpg)
 
-![house3](http://ww4.sinaimg.cn/large/6d0af205gw1f96xfnfd7qj21kw16o1kx.jpg)
+![house3](https://ww4.sinaimg.cn/large/6d0af205gw1f96xfnfd7qj21kw16o1kx.jpg)
 
 由于住在山景城，地广人稀，很少能见到3层以上的高楼，且房子基本都是木板盖的，卧室一般不在天花板安置灯泡，说这些都是防地震用的。
 
-![house4](http://ww2.sinaimg.cn/large/6d0af205gw1f96xfspo1wj21kw16o4qp.jpg)
+![house4](https://ww2.sinaimg.cn/large/6d0af205gw1f96xfspo1wj21kw16o4qp.jpg)
 
 我住的就是这种，他们叫做townhouse，有两层，楼上三个卧室，楼下一个客厅、小卧室、开放式厨房。
 
@@ -33,20 +33,20 @@ cover: 'http://ww1.sinaimg.cn/large/6d0af205gw1f96vvygiyjj21kw0dfn77.jpg'
 
 ### 交通
 
-![](http://ww1.sinaimg.cn/large/6d0af205gw1f96vurxi2oj21kw16o4gl.jpg)
+![](https://ww1.sinaimg.cn/large/6d0af205gw1f96vurxi2oj21kw16o4gl.jpg)
 
 高速上会有这种标志的道路，一般是用来给拼车的车优先行驶，即车内有3人以上才可以行驶在这条道上（如果是电动车，就没有人数限制）。
 路上车开的明显比国内快很多（一般都在80左右），而且如果你的速度比别人慢，还会视为违规（因为影响后面的车行进，导致堵车）。
 
-![](http://ww2.sinaimg.cn/large/6d0af205gw1f96vuqms6ej21kw16o1kx.jpg)
+![](https://ww2.sinaimg.cn/large/6d0af205gw1f96vuqms6ej21kw16o1kx.jpg)
 
 再来说下公共交通，明显没有国内的发达。加州这边没有地铁，一般都是这种小的VTA电车，或者城际的Caltrain。
 
-![](http://ww1.sinaimg.cn/large/6d0af205gw1f96vvygiyjj21kw0dfn77.jpg)
+![](https://ww1.sinaimg.cn/large/6d0af205gw1f96vvygiyjj21kw0dfn77.jpg)
 
 这个就是Caltrain的车站
 
-![](http://ww4.sinaimg.cn/large/6d0af205gw1f96vus21n9j21kw16oqpp.jpg)
+![](https://ww4.sinaimg.cn/large/6d0af205gw1f96vus21n9j21kw16oqpp.jpg)
 
 Caltrain内部的样子，一般是双层，但速度并不是很快（从山景城到旧金山，大概1小时左右，开车的话一般只需要40分钟）。
 
@@ -54,15 +54,15 @@ Caltrain内部的样子，一般是双层，但速度并不是很快（从山景
 
 ### 游玩
 
-![](http://ww4.sinaimg.cn/large/6d0af205jw1f96wqjbvwnj21kw0g4gug.jpg)
+![](https://ww4.sinaimg.cn/large/6d0af205jw1f96wqjbvwnj21kw0g4gug.jpg)
 
 附近能逛的一般就是小湖小树林，这个是上周去的附近一个小湖，在Google总部附近，可以租船在这里划，价格也很合理，一般一条船 20刀／小时（半天的话就是 45刀），可以4个人一起。
 
-![](http://ww2.sinaimg.cn/large/6d0af205jw1f96wgirbw8j21kw16oe81.jpg)
+![](https://ww2.sinaimg.cn/large/6d0af205jw1f96wgirbw8j21kw16oe81.jpg)
 
-![](http://ww2.sinaimg.cn/large/6d0af205jw1f96wj3yiwbj21kw16ou0x.jpg)
+![](https://ww2.sinaimg.cn/large/6d0af205jw1f96wj3yiwbj21kw16ou0x.jpg)
 
-![](http://ww4.sinaimg.cn/large/6d0af205jw1f96wh1n4nrj21kw16ohdt.jpg)
+![](https://ww4.sinaimg.cn/large/6d0af205jw1f96wh1n4nrj21kw16ohdt.jpg)
 
 划船结束后，可以在这边散步。有时会有些人在这里丢飞盘或者回旋镖。
 
@@ -72,7 +72,7 @@ Caltrain内部的样子，一般是双层，但速度并不是很快（从山景
 
 ### 一切从零开始。。。
 
-![](http://ww4.sinaimg.cn/large/6d0af205gw1f96xg7qyp6j21kw0fd7gp.jpg)
+![](https://ww4.sinaimg.cn/large/6d0af205gw1f96xg7qyp6j21kw0fd7gp.jpg)
 第一次出国，这个是西雅图机场（在此转机），感觉这里的天好蓝。  
 第一次跟老外进行了长对话交流（飞机上认识的一个高中小弟的行李没有被转出来，就跟客服人员沟通，突然发现自己居然还可以用蹩脚的口语把问题讲清楚）。
 

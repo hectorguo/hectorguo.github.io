@@ -4,7 +4,7 @@ title: Responsive Lists Layout - Three CSS solutions
 categories: ['en']
 tags: ['CSS','Front-end']
 published: True
-cover: "http://ww2.sinaimg.cn/large/6d0af205jw1exdedpktx2j20xi0k4tb8.jpg"
+cover: "https://ww2.sinaimg.cn/large/6d0af205jw1exdedpktx2j20xi0k4tb8.jpg"
 ---
 
 Recently, I just need to make a lists layout to adapt for PC and mobile devices.

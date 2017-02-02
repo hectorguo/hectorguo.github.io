@@ -4,7 +4,7 @@ title: Use iPhone to build a Wiimote-style Controller
 categories: ['en']
 tags: ['HTML5','NodeJS','Front-end']
 published: True
-cover: 'http://ww3.sinaimg.cn/large/6d0af205jw1ew4mio6htfj20go09gwgt.jpg'
+cover: 'https://ww3.sinaimg.cn/large/6d0af205jw1ew4mio6htfj20go09gwgt.jpg'
 ---
 
 Do you like playing motion-sensing games like this? Have you ever thought that it might be prohibitively expensive to play such a cool game? Actually, you can use your mobile phone to play just like that. Below is a demo.

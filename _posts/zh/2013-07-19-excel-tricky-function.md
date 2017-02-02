@@ -4,7 +4,7 @@ title: 工作中Excel里两个实用功能分享——vlookup函数及数据透�
 categories: ['zh']
 tags: ['效率提升']
 published: True
-cover: "http://ww4.sinaimg.cn/large/6d0af205jw1ewrhx7vw23j20gs08m400.jpg"
+cover: "https://ww4.sinaimg.cn/large/6d0af205jw1ewrhx7vw23j20gs08m400.jpg"
 ---
 
 工作一段时间，发现Excel里有两个功能最常用，分享下使用场景及方法。

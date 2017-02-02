@@ -14,7 +14,7 @@ I believe that it will become a valuable memory of his whole life.
 
 ## The Finished Product
 
-![](http://ww1.sinaimg.cn/large/6d0af205jw1eycjj44ljxj20qo0zktf7.jpg)
+![](https://ww1.sinaimg.cn/large/6d0af205jw1eycjj44ljxj20qo0zktf7.jpg)
 
 ## The Design Draft
 
@@ -23,4 +23,4 @@ I believe that it will become a valuable memory of his whole life.
 1. Consistency
 2. Alignment
 
-![](http://ww2.sinaimg.cn/large/6d0af205jw1ewlhqcipiij217r1gikhf.jpg)
+![](https://ww2.sinaimg.cn/large/6d0af205jw1ewlhqcipiij217r1gikhf.jpg)
