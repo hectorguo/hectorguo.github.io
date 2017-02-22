@@ -65,6 +65,9 @@ contacts:
     name: "Linkedin"
     url: "https://www.linkedin.com/in/hectorguo"
     icon: "&#xe929;"
+  -
+    name: "Resume"
+    url: "https://hectorguo.com/en/resume/"
 
 # paginate:         5
 
