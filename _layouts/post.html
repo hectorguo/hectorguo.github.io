@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.2/baguetteBox.min.css">
 <div class="post">
     <header class="post-header">
         <h1 class="post-title">{{ page.title }}</h1>
@@ -65,15 +64,9 @@ layout: default
 <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
 
 <!--image viewer-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.2/baguetteBox.min.js"></script>
+<script src="{{ "/js/lightense.min.js" | prepend: site.url }}"></script>
 <script>
-    if(baguetteBox) {
-        document.querySelector('.post-content').querySelectorAll('img').forEach((item) => {
-            var $a = '<a href="'+item.getAttribute('src')+'">'+item.outerHTML+'</a>';
-            item.outerHTML = $a;
-        });
-        baguetteBox.run('.post-content', {
-            buttons:false
-        });
+    if(Lightense) {
+        Lightense('.post-content img');
     }
 </script>
