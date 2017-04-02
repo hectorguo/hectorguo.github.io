@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 让OS X词典具备保存单词功能
+title: 让OS X词典具备保存单词功能 (2017.03.15新增直接导入Evernote)
 categories: ['zh']
 tags: ['Mac开发','Shell']
 published: True
@@ -90,3 +90,38 @@ OS X还有一个自带的工作流制作器Automator，真的是人性化的工�
   RESULT="<td>test</td>"
   sed -Ei '' "s#(</table>)#$RESULT\1#g" $FILE
 {% endhighlight %}
+
+## 2017.03.15 更新 - 直接导入Evernote：
+此工作流可以帮助直接在Evernote中新建一个笔记，并把单词释义导进去，之后可以利用 ‘笔记合并’功能，将多个单词合并到一个笔记中。
+
+合并前：
+![before merge](https://ws1.sinaimg.cn/large/6d0af205ly1fe93dlahhdj20uq06u777.jpg)
+
+合并后：
+![after merge](https://ws1.sinaimg.cn/large/6d0af205ly1fe93dl8lmuj20ul0bf0w9.jpg)
+
+工作流步骤如下：
+
+1. 先设置一个变量叫wordName（用来保存选中的单词）
+2. 获取释义
+3. 获取变量wordName
+4. 执行AppleScript（把如下代码拷贝过去，就可以了）：
+
+{% highlight bash %}
+on run {input}
+	tell application "Evernote" to activate
+	set selectedText to first item of input
+	set wordName to second item of input
+	tell application "Evernote"
+		if (not (notebook named "wordlist" exists)) then
+			make notebook with properties {name:"wordlist"}
+		end if
+		try
+			create note title wordName with text selectedText notebook "wordlist"
+			synchronize
+		end try
+	end tell
+end run
+{% endhighlight %}
+
+在此提供写好的工作流，可以直接下载导入，[下载链接](https://pan.baidu.com/s/1eRJhOtW)
