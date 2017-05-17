@@ -37,6 +37,6 @@ We designed a smartwatch prototype for improving cooking process. Its main purpo
 
 # Slides
 
-<div class="wrapper">
+<div class="embed-wrapper">
     <iframe src="https://docs.google.com/presentation/d/1kkic9Up8aPIvNg6vKmgycr8_qUV7OSTrIs2iOkemipo/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
