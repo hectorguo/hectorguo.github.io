@@ -7,13 +7,13 @@ published: True
 ---
 
 <style>
-.wrapper {
+.embed-wrapper {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
 	padding-top: 25px;
 	height: 0;
 }
-.wrapper iframe {
+.embed-wrapper iframe {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -31,7 +31,7 @@ We designed a smartwatch prototype for improving cooking process. Its main purpo
 
 # Prototype
 
-<div class="wrapper">
+<div class="embed-wrapper">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Qs-1pmAYj8Q?rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
 
