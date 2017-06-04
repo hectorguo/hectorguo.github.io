@@ -69,4 +69,5 @@ layout: default
     if(Lightense) {
         Lightense('.post-content img', {padding: 0});
     }
+    document.querySelectorAll('.post-content img').forEach(item => {item.parentElement.style.textAlign = "center";});  // center image
 </script>
