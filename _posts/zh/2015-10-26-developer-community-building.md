@@ -26,7 +26,7 @@ published: True
 
 ### 新手入门
 
-![](https://ww2.sinaimg.cn/large/6d0af205jw1eywxvydvihj20hd08xglw.jpg)
+![](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608235154.png)
 
 当用户了解了这个框架的特性，就会想知道它怎么用。因此，新手入门（Get Started）自然应运而生。
 
@@ -49,11 +49,11 @@ published: True
 
 这里可以参考下 Mapbox 的[Demo展示](https://www.mapbox.com/mapbox-gl-js/examples/)，从最简单的场景到复杂的交互，都有列出。这样大大降低了开发的门槛。
 
-![](https://ww1.sinaimg.cn/large/6d0af205jw1eywxqkgw14j20n20lfwl9.jpg)
+![](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608235204.png)
 
 ### API
 
-![](https://ww4.sinaimg.cn/large/6d0af205jw1eywxshuommj20nj0ekgq4.jpg)
+![](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608235218.png)
 
 但是，由于工作量及内容的问题，开发人员不可能把框架所有的功能都写成Demo，一个是会造成信息的冗余（明明是`true`/`false`的区别，难道还要写两个Demo不成），一个也会在一定程度上造成开发者的流失（一看内容这么多，一定很复杂，算了不看了）。因此，API板块也需要在此出现。
 
@@ -79,9 +79,9 @@ published: True
 
 国际化做的比较好的社区，可以参考 [MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/EventTarget/addEventListener) 和 [HTML5 Rocks](http://www.html5rocks.com/zh/tutorials/es7/observe/)。
 
-![](https://ww1.sinaimg.cn/large/6d0af205jw1eywxl268plj20od08xta2.jpg)
+![](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608235233.png)
 
-![](https://ww2.sinaimg.cn/large/6d0af205jw1eywxli0iy1j20ng0d6gnw.jpg)
+![](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608235244.png)
 
 ### 统计分析及反馈（可选）
 

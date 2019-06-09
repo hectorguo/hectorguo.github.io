@@ -26,9 +26,9 @@ We designed a smartwatch prototype for improving cooking process. Its main purpo
 
 # Wireframe
 
-![wireframe1](https://ws1.sinaimg.cn/large/6d0af205ly1ffoy5xxf5wj20vd0c2q8b.jpg)
+![wireframe1](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608214317.png)
 
-![wireframe2](https://ws1.sinaimg.cn/large/6d0af205ly1ffoy5wskaoj20rt0cedke.jpg)
+![wireframe2](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608214332.png)
 
 
 # Prototype

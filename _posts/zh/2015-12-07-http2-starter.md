@@ -4,7 +4,7 @@ title: 谈谈HTTP/2对前端的影响
 categories: ['zh']
 tags: ['前端开发']
 published: True
-cover: 'https://ww2.sinaimg.cn/large/6d0af205jw1eys20fr3dbj20pj0dzgnn.jpg'
+cover: 'https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608235529.png'
 ---
 
 随着 HTTP/2 规范的确认，以及主流浏览器（Chrome、Firefox、IE11）对其的全面支持，是时候采用新协议了。看了很多博文跟官方说明，在此做个总结，
@@ -24,17 +24,17 @@ HTTP 1.1时代，每个TCP连接一次只能下载一个资源，比如浏览器
 
 由于上述问题，也就催生出了 HTTP/2。在HTTP/2中，多个请求是可以合并为一个的，如下图，多个数据请求允许在同一路中传输（[Multiplexed](https://http2.github.io/faq/#why-is-http2-multiplexed)），这样也就可以解决了 问题1。
 
-![](https://ww1.sinaimg.cn/large/6d0af205jw1eys1zc6zslj210t0c5tan.jpg)
+![](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608235540.png)
 
 而因为是同一个请求，因此 HTTP头信息 只需要有一个就足够，下图可看出，HTTP/2中一个请求头中允许有多个方法，既可以GET，也可以PUT，在切换到下一个方法时，只需要获取数据即可，而不用再次获取头信息。
 
-![](https://ww3.sinaimg.cn/large/6d0af205jw1eys1yo41n3j20ft0dm759.jpg)
+![](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608235548.png)
 
 而且，HTTP/2将头信息进行了压缩（参见[HPACK](https://http2.github.io/faq/#why-hpack)），进一步的减少了头信息的大小，因此 问题2 得到了解决。
 
 同时，HTTP/2 新加入了 `PUSH` 方法，该方法的主要作用就是让服务器试探性的去推送信息给客户端，如 问题3 中所述情况，当请求`index.html`时，服务器在返回`index.html`的同时，会主动把`xxx.css`和`app.js`一同发送给浏览器。这样当浏览器解析DOM，准备发送请求获取`xxx.css`和`app.js`的时候，也许两个资源已经下载完了，只需要从缓存中获取即可。这样就大大减少了网络请求的时间。
 
-![](https://ww2.sinaimg.cn/large/6d0af205jw1eys21c1h34j20ow08yq3u.jpg)
+![](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608235603.png)
 
 ## HTTP/2给前端带来哪些影响？
 
@@ -44,7 +44,7 @@ HTTP 1.1时代，每个TCP连接一次只能下载一个资源，比如浏览器
 
 如上所述， HTTP/2 针对多个请求进行了优化，因此之前我们在前端中所做的 **关于减少HTTP请求的最佳实践都不再适用**，如合并JS、CSS文件（[Concatenation](https://hacks.mozilla.org/2012/12/fantastic-front-end-performance-part-1-concatenate-compress-cache-a-node-js-holiday-season-part-4/)），多个图片或图标合并（[Spriting](https://en.wikipedia.org/wiki/Sprite_(computer_graphics)#Sprites_by_CSS)）,将较小的JS或CSS文件内嵌到HTML中（Inlining），合并HTML文件（[Vulcanize](https://github.com/polymer/vulcanize)），根据 [此网站](https://http2-push.appspot.com) 的测试结果显示，在使用HTTP/2后，合并为一个大文件的加载时间反而会比不合并更长。
 
-![](https://ww4.sinaimg.cn/large/6d0af205jw1eys2akzllej20h30elwgb.jpg)
+![](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608235639.png)
 
 如上图所示，其中TTFB时间明显减少，所谓[TTFB（Time To First Byte）](https://en.wikipedia.org/wiki/Time_To_First_Byte)，即从浏览器发送请求开始，到接受到来自服务器的返回的第一字节信息（HTTP头信息）结束，之间所耗费的时间。这里就会包含 TCP连接往返（round trip）＋服务器处理时间（如SQL执行）。 因为浏览器在第一次发送请求后，服务器已经预先把其他资源文件一同推送给了浏览器，因此后续的资源请求中，TTFB的时间得到了缩小。
 
@@ -112,11 +112,11 @@ https.createServer(options, function(request, response) {
 
     node app.js
 
-![](https://ww4.sinaimg.cn/large/6d0af205jw1eys3nk49tfj20kf084754.jpg)
+![](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608235655.png)
 
 如果想确认是否真的采用了 HTTP/2， 只需要在Chrome Dev Tools > Network中，新增 Protocol，即可看到结果：
 
-![](https://ww4.sinaimg.cn/large/6d0af205jw1eys3nxjhxgj20ob07j766.jpg)
+![](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608235703.png)
 
 
 2015-12-25 更新：
@@ -158,7 +158,7 @@ Google提供了一个 [SimpleHttp2Server](https://github.com/GoogleChrome/simple
 
 目前各大浏览器对 HTTP/2 的支持度如下：
 
-![](https://ww3.sinaimg.cn/large/6d0af205jw1eys4nr7hkfj20rm08x75x.jpg)
+![](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608235713.png)
 
 可以看出基本可以不用担心浏览器的支持度问题，而且由于与HTTP 1.1的API一致，只要 服务端部署完成，即可无缝体验。
 
@@ -168,19 +168,19 @@ Chrome有个 [插件](https://chrome.google.com/webstore/detail/mpbpobfflnpcgagj
 
 Google、Twitter、YouTube目前都采用 HTTP/2 （蓝色⚡️代表H2）
 
-![](https://ww4.sinaimg.cn/large/6d0af205jw1eys3tkuiqkj20es062mxk.jpg)
+![](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608235723.png)
 
-![](https://ww4.sinaimg.cn/large/6d0af205jw1eys3vn0c4bj20f4064t9h.jpg)
+![](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608235731.png)
 
-![](https://ww1.sinaimg.cn/large/6d0af205jw1eys3txdbvcj20e2076jso.jpg)
+![](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608235740.png)
 
 而国内看了下，百度，必应都木有采用，而淘宝采用了SPDY 3.1（可以看作H2的前一代，绿色⚡️）
 
-![](https://ww4.sinaimg.cn/large/6d0af205jw1eys3w370l7j20i9081dip.jpg)
+![](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608235749.png)
 
-![](https://ww1.sinaimg.cn/large/6d0af205jw1eys3wdke92j20ic08ogmi.jpg)
+![](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608235757.png)
 
-![](https://ww3.sinaimg.cn/large/6d0af205jw1eys3yjsrvuj20ch04k753.jpg)
+![](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608235805.png)
 
 ## 参考
 

@@ -3,7 +3,7 @@ layout: post
 title: BA需求分析方法总结（1）——控制变量法
 category: zh
 tags: 需求分析
-cover: "https://ww2.sinaimg.cn/large/6d0af205jw1evtvrnmx37j20q10d9n2e.jpg"
+cover: "https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/6d0af205jw1evtvrnmx37j20q10d9n2e.jpg"
 ---
 
 举个简单例子。

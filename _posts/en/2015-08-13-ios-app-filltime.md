@@ -13,6 +13,6 @@ This app is under development and based on Unity engine, which can provide an am
 
 ## Prototype
 
-![](https://ww3.sinaimg.cn/large/6d0af205jw1eyzl92o0zuj20jr0in407.jpg)
+![](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608213605.png)
 
 ## In Progress

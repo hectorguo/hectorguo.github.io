@@ -3,7 +3,7 @@ layout: post
 title: "Two practices for isolating front-end development from back-end"
 categories: ['en']
 tags: ['Front-end', 'ES6']
-cover: "https://ws1.sinaimg.cn/large/6d0af205ly1fg9tx64y9ij20kd08876k.jpg"
+cover: "https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608214346.png"
 published: True
 ---
 
@@ -11,7 +11,7 @@ It is not uncommon that when a project is initialized, engineering team starts t
 
 # 1. Host a local server
 
-![JSONPlaceholder](https://ws1.sinaimg.cn/large/6d0af205ly1fg9txxlilxj201s01k05u.jpg)
+![JSONPlaceholder](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608214357.png)
 
 Before waiting for server-side being ready, we can communicate with back-end team to come to an agreement that how the APIs and data format looks like. With these APIs, we can easily create some fake data and host a local server for testing. I recommend JSONPlaceholder, a powerful tool for faking Online REST API. It supports all HTTP Methods, and after you POST a data to the server, the data will also be stored in your local machine, which looks like a real web services. Moreover, it also provide a remote service which allow you to test without hosting a local server.
 In the front-end code, it can be like this:
@@ -35,7 +35,7 @@ By doing this, you don’t need to change lots of code when the server-side is r
 
 # 2. Leverage Promise
 
-![Promise](https://ws1.sinaimg.cn/large/6d0af205ly1fg9txxucppj20go06ydfs.jpg)
+![Promise](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608214414.png)
 
 Sometimes, hosting a local server is not practical for sharing. For example, a Product Manager or Test team need to see the UI-side earlier, you can not expect the PM or test team to install a local server on their machine each by each. Also, it is not easy to host a fake server on the internal development machine which is shared by teams. Therefore, we can fake the data in our codes like this:
 

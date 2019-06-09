@@ -4,7 +4,7 @@ title: Should We Abandon GIF ?
 categories: ['en']
 tags: ['Media-Tech']
 published: True
-cover: https://ww1.sinaimg.cn/large/6d0af205gw1eycdd5zefhj20hd09swfx.jpg
+cover: https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608214137.png
 ---
 
 Recently, I captured an [interesting video](http://hectorguo.com/en/iphone-game-controler/) and prepared to share with my friends. I wondered which way I should choose to share it online, uploading to Youtube, or just converting it into a GIF ?  Given that gif is really common and more compatible for a variety of devices than video, so I upload it into [Imgur](http://imgur.com/), the most popular gif distributing platform. Unfortunately, after converting my video into gif, I found the gif format was even much larger than my video. It did astonish me. If gif's size is larger than a video, why not use video ?  Afterall, it can load faster and cost lower than gif.
@@ -45,17 +45,17 @@ For more information about them, you can visit [vp9-encoding-guide](http://wiki.
 ## Comparison
 After a few hours, I have successfully converted my videos to VP9 format. Here is the size comparison between VP9 video and gif.
 
-![](https://ww3.sinaimg.cn/large/6d0af205gw1eyccckkzuyj20bm01tgll.jpg)
+![](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608214152.png)
 
 Here is a comparison between VP9 format and H264 format:
 
-![](https://ww4.sinaimg.cn/large/6d0af205gw1eyccby0j55j20c80arjs1.jpg)
+![](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608214205.png)
 
 You can see, the quality of video aren't reduced even though the size of VP9 is 67% less than that of H264.
 
-![](https://ww2.sinaimg.cn/large/6d0af205gw1eycccso257j20b9019q2z.jpg)
+![](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608214219.png)
 
-![](https://ww2.sinaimg.cn/large/6d0af205gw1eyccgin81oj21960yeana.jpg)
+![](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/6d0af205gw1eyccgin81oj21960yeana.jpg)
 
 ## Summary
 After viewing the result above, I think it is time to abandon GIF, even though it is really convenient to share on the web platform. Maybe you don't notice that most of media websites (Twitter, Facebook, Imgur, gyfcat, etc.) have used video instead of gif already.

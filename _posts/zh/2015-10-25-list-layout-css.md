@@ -4,7 +4,7 @@ title: 列表响应式布局--三种CSS方案
 categories: ['zh']
 tags: ['CSS','前端开发']
 published: True
-cover: "https://ww2.sinaimg.cn/large/6d0af205jw1exdedpktx2j20xi0k4tb8.jpg"
+cover: "https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608214019.png"
 ---
 
 最近需要做一些带图片的布局，适用于桌面及移动端。参考了一些网站的实践方案，在此做个总结。

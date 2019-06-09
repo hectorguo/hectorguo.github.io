@@ -4,7 +4,7 @@ title: "CSS: Font Setting to Adapt for Multi Platforms"
 categories: ['en']
 tags: ['CSS','Front-end']
 published: True
-cover: "https://ww3.sinaimg.cn/large/6d0af205jw1ew72255s7ej20iw07sq3a.jpg"
+cover: "https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608214006.png"
 ---
 
 Apple just publish its new systems iOS 9 and OS X EI Capitan recently. With these new systems, a new kind of font are also published, which called [San Francisco](https://developer.apple.com/videos/wwdc/2015/?id=804). It looks like more light and readable than [Helvetica](https://en.wikipedia.org/wiki/Helvetica), so I decide to use it on my website. However, I realize that the declaration on my style is:

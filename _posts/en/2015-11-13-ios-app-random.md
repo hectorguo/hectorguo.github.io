@@ -11,13 +11,13 @@ This is a mobile app to help people make a decision - just shake your phone and 
 
 ## Demo
 
-![](https://ww3.sinaimg.cn/large/6d0af205jw1ez49j8zqq7j20o40j0jt5.jpg)
+![](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/6d0af205jw1ez49j8zqq7j20o40j0jt5.jpg)
 
-![](https://ww1.sinaimg.cn/large/6d0af205jw1ez491jpcwwg208w0fsn9f.gif)
+![](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/6d0af205jw1ez491jpcwwg208w0fsn9f.gif)
 
 Scan the QR code below, experience Beta Version.
 
-![](https://ww3.sinaimg.cn/small/6d0af205gw1f01m162x2nj20ga0g4q4l.jpg)
+![](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608214124.png)
 
 iOS and Android version are coming!
 

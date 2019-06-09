@@ -4,7 +4,7 @@ title: "利用html5识别文件类型"
 published: true
 category: zh
 tags: ['HTML5','前端开发']
-cover: "https://ww4.sinaimg.cn/large/6d0af205jw1evtw72ji9pj20hs0aoq4b.jpg"
+cover: "https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608235010.png"
 ---
 
 通常，在文件上传时，我们只会根据文件的扩展名来识别并限制所上传的文件类型。 

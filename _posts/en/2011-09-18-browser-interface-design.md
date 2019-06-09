@@ -10,19 +10,19 @@ published: True
 Inspired by new generation of Browsers such as Safari and Chrome, I decided to desgin a new user interface of browsers to improve the expericence of surfing online. Then I found that the Maxthon Browser support more flexible custom on the interface than other browsers. So I decided to use it to realize my idea.
 
 ### Final work
-![](https://ww1.sinaimg.cn/large/6d0af205jw1ew71fdec2tj20zk0bq40h.jpg)
+![](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608211919.png)
 
 ### Purpose
 The key point of the design is that I want to remove all the redundant functions making sure that there are more spaces for content. I changed the layout of navigation bar and made a auto-hidden address bar. 
 
 The address bar will automatically hide if you don't hover on the top.
-![](https://ww4.sinaimg.cn/large/6d0af205jw1ew71c3k3ilj20si03a74y.jpg)
+![](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608211951.png)
 
 
 This is a state when address bar is open as below.
-![](https://ww2.sinaimg.cn/large/6d0af205jw1ew71dw3c5uj20s903z3zt.jpg)
+![](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608212010.png)
 
-![](https://ww3.sinaimg.cn/large/6d0af205jw1ez4tqv7fq0g20zk03wtfd.gif)
+![](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/6d0af205jw1ez4tqv7fq0g20zk03wtfd.gif)
 
 By doing this, users can just focus on the content and switch tabs more easily in this mode than in the inconvenient fullscreen mode. After testing on a few devices, I found that it was very appropriate for small screen devices such as laptops.
 
@@ -31,13 +31,13 @@ Coincidentally, there was a [design contest](http://old-bbs.maxthon.cn/thread-53
 ### Entries
 
 #### 1. Water Box
-![](https://ww2.sinaimg.cn/large/6d0af205jw1ew71ra11qbj202s02s748.jpg)
+![](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608212237.png)
 
-![](https://ww4.sinaimg.cn/large/6d0af205jw1ew71hcfthkj20sc03dtad.jpg)
+![](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/6d0af205jw1ew71hcfthkj20sc03dtad.jpg)
 
-![](https://ww2.sinaimg.cn/large/6d0af205jw1ew71gqjtxfj20sg0k0dky.jpg)
+![](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608212423.png)
 
 #### 2. Funny Box
-![](https://ww1.sinaimg.cn/large/6d0af205jw1ew71qy5gklj202s02sq2s.jpg)
+![](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608212440.png)
 
-![](https://ww2.sinaimg.cn/large/6d0af205jw1ew71beqp02j20sg0k0jw0.jpg)
+![](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608212454.png)

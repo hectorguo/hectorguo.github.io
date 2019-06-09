@@ -4,7 +4,7 @@ title: "抛弃word, 拥抱markdown"
 published: true
 category: zh
 tags: 效率提升
-cover: "https://ww4.sinaimg.cn/large/6d0af205jw1eug84adunrj20py0dtq8o.jpg"
+cover: "https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/20190608234938.png"
 ---
 
 ## Word排版难用吗？
