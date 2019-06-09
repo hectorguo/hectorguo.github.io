@@ -73,6 +73,7 @@ Caltrain内部的样子，一般是双层，但速度并不是很快（从山景
 ### 一切从零开始。。。
 
 ![](https://raw.githubusercontent.com/hectorguo/blog-imgs/master/img/6d0af205gw1f96xg7qyp6j21kw0fd7gp.jpg)
+
 第一次出国，这个是西雅图机场（在此转机），感觉这里的天好蓝。  
 第一次跟老外进行了长对话交流（飞机上认识的一个高中小弟的行李没有被转出来，就跟客服人员沟通，突然发现自己居然还可以用蹩脚的口语把问题讲清楚）。
 
